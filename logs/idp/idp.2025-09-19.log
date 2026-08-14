@@ -1,0 +1,305 @@
+2025-09-19 17:34:25.697 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-19 17:34:25.698 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 7100 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-19 17:34:25.700 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-19 17:34:26.558 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19 17:34:26.559 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19 17:34:26.559 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-19 17:34:26.680 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-19 17:34:26.830 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-19 17:34:26.833 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-19 17:34:28.569 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-19 17:34:28.727 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19 17:34:28.738 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-19 17:34:28.748 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-19 17:34:28.764 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-19 17:34:28.834 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-19 17:34:28.838 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryPasswordUsingGET_1
+2025-09-19 17:34:28.856 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-19 17:34:28.875 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-19 17:34:28.887 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 3.416 seconds (JVM running for 4.941)
+2025-09-19 17:36:26.021 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19 17:36:26.142 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {"knowledgeBase":"q","num":"4"}
+
+2025-09-19 17:36:26.155 [http-nio-8080-exec-3] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 请根据以下通话内容，帮我总结出这通会话的工单内容。请识别客户提出的问题或需求，并尽可能提取以下信息：客户意图、涉及的产品、问题描述、期望的解决方案（如果有）。提取的工单内容：客户意图：涉及的产品/服务：订单号：问题描述：期望的解决方案：
+通话记录:客服：客服: 您好，很高兴为您服务。请问有什么可以帮您？客户: 我购买的XX产品昨天收到了，但是发现无法开机。客服: 非常抱歉给您带来不便。请问您的订单号是多少呢？客户: 我的订单号是1234567890。客服: 好的，请您详细描述一下无法开机的具体情况。客户: 就是按电源键没反应，指示灯也不亮。我尝试充电了，也没有任何反应。客服: 明白了。您希望如何解决这个问题呢？客户: 我希望能尽快更换一个新的产品。客服: 好的，我们会为您登记处理。
+2025-09-19 17:36:26.157 [http-nio-8080-exec-3] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=localhost:8080/, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720250919173626930605",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"173626",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20250919"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":"q",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"请根据以下通话内容，帮我总结出这通会话的工单内容。请识别客户提出的问题或需求，并尽可能提取以下信息：客户意图、涉及的产品、问题描述、期望的解决方案（如果有）。提取的工单内容：客户意图：涉及的产品/服务：订单号：问题描述：期望的解决方案：\n通话记录:客服：客服: 您好，很高兴为您服务。请问有什么可以帮您？客户: 我购买的XX产品昨天收到了，但是发现无法开机。客服: 非常抱歉给您带来不便。请问您的订单号是多少呢？客户: 我的订单号是1234567890。客服: 好的，请您详细描述一下无法开机的具体情况。客户: 就是按电源键没反应，指示灯也不亮。我尝试充电了，也没有任何反应。客服: 明白了。您希望如何解决这个问题呢？客户: 我希望能尽快更换一个新的产品。客服: 好的，我们会为您登记处理。",
+						"knowledge_base":"q"
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720250919173626930605"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20250919",
+						"ConsumerSeqNo":"37720250919173626930605",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"173626"
+					}
+				}
+			}
+		}
+	}
+}
+2025-09-19 17:36:26.163 [http-nio-8080-exec-3] ERROR c.e.idp.service.impl.KbpServiceImpl - 调用KBP接口异常
+java.lang.IllegalArgumentException: Expected scheme-specific part at index 10: localhost:
+	at java.net.URI.create(URI.java:852)
+	at org.springframework.web.util.DefaultUriBuilderFactory$DefaultUriBuilder.createUri(DefaultUriBuilderFactory.java:411)
+	at org.springframework.web.util.DefaultUriBuilderFactory$DefaultUriBuilder.build(DefaultUriBuilderFactory.java:404)
+	at org.springframework.web.util.DefaultUriBuilderFactory.expand(DefaultUriBuilderFactory.java:154)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:716)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.service.impl.KbpServiceImpl.sendKbpRequestRsp(KbpServiceImpl.java:77)
+	at com.egoo.idp.controller.KbpController.page(KbpController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.URISyntaxException: Expected scheme-specific part at index 10: localhost:
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.failExpecting(URI.java:2854)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 57 common frames omitted
+2025-09-19 17:36:26.195 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 149ms
+
+2025-09-19 17:38:00.859 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-19 17:38:00.859 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 29196 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-19 17:38:00.861 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-19 17:38:01.599 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-19 17:38:01.600 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-19 17:38:01.601 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-19 17:38:01.707 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-19 17:38:01.845 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-19 17:38:01.848 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-19 17:38:03.329 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-19 17:38:03.479 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-19 17:38:03.490 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-19 17:38:03.500 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-19 17:38:03.518 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-19 17:38:03.591 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-19 17:38:03.595 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryPasswordUsingGET_1
+2025-09-19 17:38:03.614 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-19 17:38:03.631 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-19 17:38:03.642 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 2.993 seconds (JVM running for 4.33)
+2025-09-19 17:38:10.656 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-19 17:38:10.724 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {"knowledgeBase":"q","num":"4"}
+
+2025-09-19 17:38:10.732 [http-nio-8080-exec-1] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 请根据以下通话内容，帮我总结出这通会话的工单内容。请识别客户提出的问题或需求，并尽可能提取以下信息：客户意图、涉及的产品、问题描述、期望的解决方案（如果有）。提取的工单内容：客户意图：涉及的产品/服务：订单号：问题描述：期望的解决方案：
+通话记录:客服：客服: 您好，很高兴为您服务。请问有什么可以帮您？客户: 我购买的XX产品昨天收到了，但是发现无法开机。客服: 非常抱歉给您带来不便。请问您的订单号是多少呢？客户: 我的订单号是1234567890。客服: 好的，请您详细描述一下无法开机的具体情况。客户: 就是按电源键没反应，指示灯也不亮。我尝试充电了，也没有任何反应。客服: 明白了。您希望如何解决这个问题呢？客户: 我希望能尽快更换一个新的产品。客服: 好的，我们会为您登记处理。
+2025-09-19 17:38:10.734 [http-nio-8080-exec-1] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=localhost:8080/, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720250919173810256287",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"173810",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20250919"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":"q",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"请根据以下通话内容，帮我总结出这通会话的工单内容。请识别客户提出的问题或需求，并尽可能提取以下信息：客户意图、涉及的产品、问题描述、期望的解决方案（如果有）。提取的工单内容：客户意图：涉及的产品/服务：订单号：问题描述：期望的解决方案：\n通话记录:客服：客服: 您好，很高兴为您服务。请问有什么可以帮您？客户: 我购买的XX产品昨天收到了，但是发现无法开机。客服: 非常抱歉给您带来不便。请问您的订单号是多少呢？客户: 我的订单号是1234567890。客服: 好的，请您详细描述一下无法开机的具体情况。客户: 就是按电源键没反应，指示灯也不亮。我尝试充电了，也没有任何反应。客服: 明白了。您希望如何解决这个问题呢？客户: 我希望能尽快更换一个新的产品。客服: 好的，我们会为您登记处理。",
+						"knowledge_base":"q"
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720250919173810256287"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20250919",
+						"ConsumerSeqNo":"37720250919173810256287",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"173810"
+					}
+				}
+			}
+		}
+	}
+}
+2025-09-19 17:38:10.739 [http-nio-8080-exec-1] ERROR c.e.idp.service.impl.KbpServiceImpl - 调用kbp异常
+java.lang.IllegalArgumentException: Expected scheme-specific part at index 10: localhost:
+	at java.net.URI.create(URI.java:852)
+	at org.springframework.web.util.DefaultUriBuilderFactory$DefaultUriBuilder.createUri(DefaultUriBuilderFactory.java:411)
+	at org.springframework.web.util.DefaultUriBuilderFactory$DefaultUriBuilder.build(DefaultUriBuilderFactory.java:404)
+	at org.springframework.web.util.DefaultUriBuilderFactory.expand(DefaultUriBuilderFactory.java:154)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:716)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.service.impl.KbpServiceImpl.sendKbpRequestRsp(KbpServiceImpl.java:80)
+	at com.egoo.idp.controller.KbpController.page(KbpController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.URISyntaxException: Expected scheme-specific part at index 10: localhost:
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.failExpecting(URI.java:2854)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URI.create(URI.java:850)
+	... 57 common frames omitted
+2025-09-19 17:38:10.740 [http-nio-8080-exec-1] ERROR c.e.idp.service.impl.KbpServiceImpl - KBP返回空响应
+2025-09-19 17:38:10.763 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 98ms
+

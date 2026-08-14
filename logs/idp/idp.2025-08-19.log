@@ -1,0 +1,3 @@
+2025-08-19 16:07:08.851 [main] INFO  c.e.i.s.i.HistorySessionServiceImpl - 需要加密{"UserName":"12014404","UserId":"12014404","DisplayName":"王婧"}
+2025-08-19 16:07:08.855 [main] INFO  c.e.i.s.i.HistorySessionServiceImpl - 加密后:eyJVc2VyTmFtZSI6IjEyMDE0NDA0IiwiVXNlcklkIjoiMTIwMTQ0MDQiLCJEaXNwbGF5TmFtZSI6IueOi+WppyJ9
+2025-08-19 16:07:08.859 [main] INFO  c.e.i.s.i.HistorySessionServiceImpl - 解密后{"UserName":"12014404","UserId":"12014404","DisplayName":"王婧"}

@@ -1,0 +1,1950 @@
+2025-09-04 15:23:46.718 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:23:46.722 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 14716 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:23:46.723 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:23:47.701 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:23:47.710 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:23:47.711 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:23:47.845 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:23:48.020 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:23:48.023 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:23:51.613 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:23:51.781 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:23:51.795 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:23:51.808 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:23:51.828 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:23:51.899 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:23:51.925 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:23:51.925 [main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType com.alibaba.fastjson.JSONObject
+2025-09-04 15:23:51.938 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:23:51.940 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:23:51.943 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:23:51.957 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.504 seconds (JVM running for 9.172)
+2025-09-04 15:24:51.884 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:24:51.887 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 23336 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:24:51.888 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:24:52.785 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:24:52.786 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:24:52.786 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:24:52.918 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:24:53.079 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:24:53.082 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:24:56.516 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:24:56.665 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:24:56.677 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:24:56.687 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:24:56.705 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:24:56.773 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:24:56.801 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:24:56.802 [main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType com.alibaba.fastjson.JSONObject
+2025-09-04 15:24:56.813 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:24:56.814 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:24:56.817 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:24:56.831 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.204 seconds (JVM running for 8.161)
+2025-09-04 15:25:45.592 [http-nio-8080-exec-6] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:25:45.649 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:25:45.692 [http-nio-8080-exec-6] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:25:45.701 [http-nio-8080-exec-6] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 90ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	... 50 common frames omitted
+2025-09-04 15:25:45.703 [http-nio-8080-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:25:45.710 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:25:45.736 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 26ms
+
+2025-09-04 15:26:06.060 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:26:06.077 [http-nio-8080-exec-10] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:26:06.078 [http-nio-8080-exec-10] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 18ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	... 50 common frames omitted
+2025-09-04 15:26:06.078 [http-nio-8080-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpClientErrorException$NotFound: 404 : "<!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1></body></html>"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:113)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:26:06.079 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:26:06.081 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 2ms
+
+2025-09-04 15:26:50.614 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:26:50.615 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 2016 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:26:50.616 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:26:51.471 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:26:51.472 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:26:51.472 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:26:51.592 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:26:51.759 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:26:51.762 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:26:55.745 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:26:55.908 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:26:55.922 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:26:55.932 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:26:55.952 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:26:56.012 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:26:56.033 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:26:56.033 [main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType com.alibaba.fastjson.JSONObject
+2025-09-04 15:26:56.043 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:26:56.045 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:26:56.048 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:26:56.060 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.687 seconds (JVM running for 8.438)
+2025-09-04 15:27:13.195 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:27:13.235 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:27:13.265 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:27:13.272 [http-nio-8080-exec-2] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 6ms
+Exception: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] 
+
+java.lang.IllegalStateException: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] 
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:210)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	... 45 common frames omitted
+2025-09-04 15:27:13.274 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] ] with root cause
+java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:27:13.277 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:27:13.296 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 19ms
+
+2025-09-04 15:27:13.298 [http-nio-8080-exec-1] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970833281,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:27:13.299 [http-nio-8080-exec-1] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 92ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970833281,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	... 50 common frames omitted
+2025-09-04 15:27:13.299 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970833281,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:27:13.303 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:27:13.323 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 20ms
+
+2025-09-04 15:28:27.327 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:28:27.329 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 27808 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:28:27.329 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:28:28.155 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:28:28.156 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:28:28.156 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:28:28.280 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:28:28.450 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:28:28.453 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:28:31.851 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:28:32.000 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:28:32.013 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:28:32.027 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:28:32.047 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:28:32.129 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:28:32.156 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:28:32.156 [main] WARN  s.d.s.w.r.p.ParameterDataTypeReader - Trying to infer dataType com.alibaba.fastjson.JSONObject
+2025-09-04 15:28:32.167 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:28:32.168 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:28:32.172 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:28:32.184 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.103 seconds (JVM running for 8.405)
+2025-09-04 15:28:42.916 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:28:42.963 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:28:42.993 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:28:43.002 [http-nio-8080-exec-2] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 6ms
+Exception: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] 
+
+java.lang.IllegalStateException: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] 
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:210)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	... 45 common frames omitted
+2025-09-04 15:28:43.004 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: argument type mismatch
+Controller [com.egoo.idp.controller.KbpController]
+Method [public java.lang.Object com.egoo.idp.controller.KbpController.page1(com.alibaba.fastjson.JSONObject)] with argument values:
+ [0] [type=org.springframework.validation.support.BindingAwareModelMap] [value={}] ] with root cause
+java.lang.IllegalArgumentException: argument type mismatch
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:28:43.009 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:28:43.033 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 24ms
+
+2025-09-04 15:28:43.035 [http-nio-8080-exec-1] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970923012,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:28:43.036 [http-nio-8080-exec-1] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 107ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970923012,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	... 50 common frames omitted
+2025-09-04 15:28:43.036 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 : "{"timestamp":1756970923012,"status":500,"error":"Internal Server Error","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:100)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:170)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:28:43.037 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:28:43.057 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 20ms
+
+2025-09-04 15:30:11.720 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:30:11.723 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 34280 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:30:11.723 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:30:12.555 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:30:12.556 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:30:12.556 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:30:12.681 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:30:12.828 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:30:12.831 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:30:16.508 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:30:16.723 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:30:16.736 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:30:16.746 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:30:16.764 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:30:16.823 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:30:16.844 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:30:16.864 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:30:16.865 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:30:16.869 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:30:16.887 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.397 seconds (JVM running for 8.045)
+2025-09-04 15:31:06.752 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:31:06.790 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:31:06.816 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:31:06.848 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{"header":"header","body":"body"}
+2025-09-04 15:31:06.866 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 51ms
+
+2025-09-04 15:31:06.868 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"message":"正常消息返回"}
+2025-09-04 15:31:06.869 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 104ms
+
+2025-09-04 15:31:26.822 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 33184 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:31:26.821 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:31:26.823 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:31:27.647 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:31:27.649 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:31:27.649 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:31:27.783 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:31:27.942 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:31:27.946 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:31:31.696 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:31:31.843 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:31:31.855 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:31:31.866 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:31:31.897 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:31:31.972 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:31:31.993 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:31:32.011 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:31:32.013 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:31:32.016 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:31:32.028 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.443 seconds (JVM running for 8.42)
+2025-09-04 15:31:38.720 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:31:38.764 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:31:38.797 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:31:38.826 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "{"header":"header","body":"body"}": not a valid `int` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "{"header":"header","body":"body"}": not a valid `int` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]]
+2025-09-04 15:31:38.826 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 400
+Request Processing Time: 29ms
+
+2025-09-04 15:31:38.830 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:31:38.845 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 400
+Request Processing Time: 15ms
+
+2025-09-04 15:31:38.848 [http-nio-8080-exec-2] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971098832,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:31:38.850 [http-nio-8080-exec-2] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 115ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971098832,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	... 50 common frames omitted
+2025-09-04 15:31:38.851 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971098832,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:31:38.854 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:31:38.876 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 22ms
+
+2025-09-04 15:34:08.523 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:34:08.525 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 31648 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:34:08.525 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:34:09.372 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:34:09.373 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:34:09.373 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:34:09.495 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:34:09.654 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:34:09.657 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:34:13.001 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:34:13.156 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:34:13.170 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:34:13.182 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:34:13.204 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:34:13.285 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:34:13.312 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:34:13.333 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:34:13.335 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:34:13.338 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:34:13.350 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.06 seconds (JVM running for 7.666)
+2025-09-04 15:34:24.567 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:34:24.606 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:34:24.638 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:34:24.665 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "{}": not a valid `int` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "{}": not a valid `int` value<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]]
+2025-09-04 15:34:24.665 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 400
+Request Processing Time: 27ms
+
+2025-09-04 15:34:24.670 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:34:24.685 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 400
+Request Processing Time: 15ms
+
+2025-09-04 15:34:24.690 [http-nio-8080-exec-1] ERROR c.egoo.idp.controller.KbpController - 请求异常:
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971264671,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:34:24.692 [http-nio-8080-exec-1] ERROR com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 113ms
+Exception: 服务调用失败
+
+java.lang.RuntimeException: 服务调用失败
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971264671,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:74)
+	... 50 common frames omitted
+2025-09-04 15:34:24.693 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/idp] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 服务调用失败] with root cause
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":1756971264671,"status":400,"error":"Bad Request","path":"/idp/if/v1/rsp/test1"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.postForObject(RestTemplate.java:443)
+	at com.egoo.idp.controller.KbpController.page2(KbpController.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1790)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2025-09-04 15:34:24.696 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/error
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:34:24.717 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 500
+Request Processing Time: 21ms
+
+2025-09-04 15:34:51.777 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:34:51.778 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 28728 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:34:51.779 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:34:52.630 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:34:52.631 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:34:52.632 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:34:52.751 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:34:52.912 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:34:52.916 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:34:56.880 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:34:57.037 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:34:57.049 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:34:57.059 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:34:57.079 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:34:57.142 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:34:57.163 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:34:57.182 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:34:57.184 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:34:57.187 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:34:57.200 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.668 seconds (JVM running for 8.359)
+2025-09-04 15:35:02.882 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:35:02.933 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:35:02.961 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:35:02.990 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:35:03.007 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 46ms
+
+2025-09-04 15:35:03.009 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:35:03.010 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 113ms
+
+2025-09-04 15:38:15.891 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:38:15.892 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 27912 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:38:15.893 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:38:16.735 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:38:16.736 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:38:16.736 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:38:16.867 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:38:17.017 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:38:17.021 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:38:20.670 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:38:20.879 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:38:20.895 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:38:20.907 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:38:20.925 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:38:20.982 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:38:21.002 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:38:21.020 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:38:21.022 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:38:21.025 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:38:21.037 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.377 seconds (JVM running for 8.357)
+2025-09-04 15:38:28.067 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:38:28.108 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:38:28.134 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:38:28.166 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:38:28.185 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 51ms
+
+2025-09-04 15:38:28.188 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:38:28.191 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 110ms
+
+2025-09-04 15:38:38.154 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:38:38.159 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:38:38.160 [http-nio-8080-exec-4] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:38:38.161 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 2ms
+
+2025-09-04 15:38:38.161 [http-nio-8080-exec-6] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:38:38.162 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 8ms
+
+2025-09-04 15:39:25.186 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:39:25.190 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 6608 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:39:25.190 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:39:26.032 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:39:26.033 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:39:26.033 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:39:26.167 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:39:26.324 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:39:26.328 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:39:30.288 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:39:30.441 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:39:30.453 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:39:30.464 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:39:30.485 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:39:30.560 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:39:30.591 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:39:30.611 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:39:30.613 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:39:30.616 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:39:30.628 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.675 seconds (JVM running for 8.59)
+2025-09-04 15:39:35.455 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:39:35.511 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:39:35.553 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:39:35.574 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:39:35.590 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 37ms
+
+2025-09-04 15:39:35.592 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:39:35.593 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 122ms
+
+2025-09-04 15:47:32.794 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 10536 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:47:32.793 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:47:32.795 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:47:33.634 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:47:33.635 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:47:33.635 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:47:33.756 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:47:33.903 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:47:33.907 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:47:37.240 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:47:37.445 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:47:37.458 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:47:37.469 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:47:37.487 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:47:37.547 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:47:37.581 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:47:37.616 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:47:37.619 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:47:37.623 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:47:37.639 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.08 seconds (JVM running for 7.946)
+2025-09-04 15:47:46.774 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:47:46.814 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:47:46.838 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:47:46.868 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:47:46.889 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 51ms
+
+2025-09-04 15:47:46.891 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:47:46.893 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 106ms
+
+2025-09-04 15:48:21.085 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:48:21.087 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 25320 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:48:21.087 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:48:21.961 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:48:21.962 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:48:21.962 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:48:22.083 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:48:22.238 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:48:22.241 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:48:34.987 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:48:35.169 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:48:35.188 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:48:35.202 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:48:35.224 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:48:35.291 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:48:35.314 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:48:35.333 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:48:35.334 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:48:35.337 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:48:35.350 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 14.526 seconds (JVM running for 17.14)
+2025-09-04 15:48:43.064 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:48:43.118 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:48:43.145 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:48:43.176 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:48:43.192 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 47ms
+
+2025-09-04 15:48:43.194 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:48:43.196 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 115ms
+
+2025-09-04 15:49:24.500 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 15:49:24.503 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 26816 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 15:49:24.503 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 15:49:25.331 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:49:25.332 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 15:49:25.332 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 15:49:25.462 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 15:49:25.614 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 15:49:25.617 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 15:49:29.431 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 15:49:29.588 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 15:49:29.600 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 15:49:29.611 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 15:49:29.629 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 15:49:29.696 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 15:49:29.720 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 15:49:29.740 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 15:49:29.742 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 15:49:29.745 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 15:49:29.758 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.492 seconds (JVM running for 8.047)
+2025-09-04 15:49:40.375 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 15:49:40.420 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test2
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-09-04 15:49:40.444 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test1
+Request Method: POST
+Client IP: 127.0.0.1
+Request Parameters: {}
+
+2025-09-04 15:49:40.472 [http-nio-8080-exec-2] INFO  c.egoo.idp.controller.KbpController - 收到的请求体{}
+2025-09-04 15:49:40.488 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 44ms
+
+2025-09-04 15:49:40.490 [http-nio-8080-exec-1] INFO  c.egoo.idp.controller.KbpController - 交易返回 ={"header":"\\u5f20\\u4e09","body":"\\u5f20\\u4e09","message":"正常消息返回"}
+2025-09-04 15:49:40.492 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 104ms
+
+2025-09-04 16:22:24.811 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 25528 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-04 16:22:24.809 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-04 16:22:24.813 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-04 16:22:25.661 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-04 16:22:25.662 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-04 16:22:25.663 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-04 16:22:25.800 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-04 16:22:25.962 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-04 16:22:25.965 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-04 16:22:29.944 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-04 16:22:30.135 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-04 16:22:30.147 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-04 16:22:30.158 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-04 16:22:30.178 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-04 16:22:30.247 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-09-04 16:22:30.278 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-04 16:22:30.289 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-04 16:22:30.292 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-04 16:22:30.295 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-04 16:22:30.314 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.751 seconds (JVM running for 8.498)

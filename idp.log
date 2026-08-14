@@ -1,0 +1,674 @@
+2028-12-18 15:06:15.690 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/elder/pcva.trade.q074.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052"}
+
+2028-12-18 15:06:15.699 [http-nio-8080-exec-3] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"99d6cc9da71a4db9"},"REQ_BODY":{"PHONE_NO":"51981693052"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C002012028121815061599d6cc9da71a4db9A731311","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150615","AgentId":"00000","TransServiceCode":"pcva.trade.q074.01","AgentLevel":"0"}}
+2028-12-18 15:06:15.833 [http-nio-8080-exec-3] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C002012028121815061599d6cc9da71a4db9A731311","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150615","ResponseTime":"150554","TransServiceCode":"pcva.trade.q074.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"99d6cc9da71a4db9"},"RSP_BODY":{"OLD_FLAG":"0"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:06:15.833 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 143ms
+
+2028-12-18 15:06:15.878 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/redirect/info
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"ANI":"51981693052"}
+
+2028-12-18 15:06:15.879 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/rdr001/q, 请求体={"phoneNo":"51981693052"}
+2028-12-18 15:06:18.889 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":500001,"msg":"系统繁忙，请稍候再试"}
+2028-12-18 15:06:18.889 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/tra002/query, 请求体={"phoneNo":"51981693052"}
+2028-12-18 15:06:18.893 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":0}
+2028-12-18 15:06:18.893 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 3015ms
+
+2028-12-18 15:06:18.951 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/redirect/info
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"ANI":"51981693052"}
+
+2028-12-18 15:06:18.951 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/rdr001/q, 请求体={"phoneNo":"51981693052"}
+2028-12-18 15:06:21.957 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":500001,"msg":"系统繁忙，请稍候再试"}
+2028-12-18 15:06:21.957 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/tra002/query, 请求体={"phoneNo":"51981693052"}
+2028-12-18 15:06:21.961 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":0}
+2028-12-18 15:06:21.961 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 3010ms
+
+2028-12-18 15:06:48.342 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"交易明细查询。","num":"","queryPrefix":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2028-12-18 15:06:48.342 [http-nio-8080-exec-2] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：交易明细查询。
+2028-12-18 15:06:48.343 [http-nio-8080-exec-2] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720281218150648563878",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"150648",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20281218"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：交易明细查询。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720281218150648563878"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20281218",
+						"ConsumerSeqNo":"37720281218150648563878",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"150648"
+					}
+				}
+			}
+		}
+	}
+}
+2028-12-18 15:06:49.106 [http-nio-8080-exec-2] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720281218150648563878","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"150648","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20281218","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：交易明细查询。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"43798e62f3b64446a26bb3b7e25cbbfb"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20281218","ConsumerSeqNo":"37720281218150648563878","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"150648"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2028-12-18 15:06:49.107 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 765ms
+
+2028-12-18 15:06:56.960 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"信用卡账户明细。","num":"0","queryPrefix":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2028-12-18 15:06:56.960 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。
+2028-12-18 15:06:56.961 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720281218150656258368",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"150656",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20281218"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720281218150656258368"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20281218",
+						"ConsumerSeqNo":"37720281218150656258368",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"150656"
+					}
+				}
+			}
+		}
+	}
+}
+2028-12-18 15:06:57.850 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720281218150656258368","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"150656","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20281218","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"信用卡账户明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"201cc0e58df54c41adf467ee1ef1b5dc"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20281218","ConsumerSeqNo":"37720281218150656258368","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"150656"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2028-12-18 15:06:57.853 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 893ms
+
+2028-12-18 15:07:18.972 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/idOrCardInquire
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","var_input":"6251290040068835","u_ani":"51981693052"}
+
+2028-12-18 15:07:18.973 [http-nio-8080-exec-4] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"10909ed39a574c5e"},"REQ_BODY":{"CARDNO":"6251290040068835"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C002012028121815071810909ed39a574c5eA131055","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150718","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd048.01","AgentLevel":"0"}}
+2028-12-18 15:07:19.359 [http-nio-8080-exec-4] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C002012028121815071810909ed39a574c5eA131055","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150718","ResponseTime":"150657","TransServiceCode":"pcva.ccard.ccd048.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"10909ed39a574c5e"},"RSP_BODY":{"PAGENUM":"1","TotalNum":"1","RspStruct":[{"BSCSUPPIND":"B","CARDLIMIT":"0","STATUSCD":"","NEWPLASTICCD":" ","NAME":"å¤æ°æ®","CARDCODE":" ","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","COBRANDNO":"null","EXPIRYCCYYMM":"203612","CARDNO":"6251290040068835","CHIEFACCNO":""}],"TotalPages":"1","LISTPAGE":"1"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:19.360 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 388ms
+
+2028-12-18 15:07:19.756 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/getVisaInterview/pcva.ccard.ccd036.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290040068835"}
+
+2028-12-18 15:07:19.756 [http-nio-8080-exec-9] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"5312dd2248b44ca5"},"REQ_BODY":{"CARDNO":"6251290040068835"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C00201202812181507195312dd2248b44ca5A645768","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150719","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd036.01","AgentLevel":"0"}}
+2028-12-18 15:07:19.941 [http-nio-8080-exec-9] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C00201202812181507195312dd2248b44ca5A645768","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150719","ResponseTime":"150826","TransServiceCode":"pcva.ccard.ccd036.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"5312dd2248b44ca5"},"RSP_BODY":{"BSCSUPPIND":"B","CARDSTATUS":"A","CARDCOLLMETHOD":"C","PHONE":"13652521010","CBCHANNELTYPE":"07","PINVERIFYIND":"Y","CARDMEDIA":"B","ACCNO":"00000000000008019992","PLASTICCDA":"A","CARDCODE":" ","ISFLAG":"N","ECMAXBAL":"0","CUSTNAME":"å¤æ°æ®","EXPIRYCCYYMM":"574165","EMBNAME":"HU TINGYUE","CARDNO":"6251290040068835","CURRENCY":"0","SMSIND":"1","ECCHIPTYPE":"2","IDTYPE":"10101","CARDLIMIT":"0","CHTYPE":"01","CARDDELIVERYADDR":"H","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","ECOPENIND":"0","ADDDATA":"141018219901216019X","IDNO":"41018219901216019X"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:19.945 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 189ms
+
+2028-12-18 15:07:20.388 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/menu/queryPass/pcva.ccard.ccd070.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290040068835"}
+
+2028-12-18 15:07:20.388 [http-nio-8080-exec-1] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"0fa6a1ad5e404e8a"},"REQ_BODY":{"CARDNO":"6251290040068835"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C00201202812181507200fa6a1ad5e404e8aA926031","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150720","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd070.01","AgentLevel":"0"}}
+2028-12-18 15:07:20.805 [http-nio-8080-exec-1] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C00201202812181507200fa6a1ad5e404e8aA926031","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150720","ResponseTime":"150659","TransServiceCode":"pcva.ccard.ccd070.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"0fa6a1ad5e404e8a"},"RSP_BODY":{"ALREADYSETFLAG":"true"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:20.807 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 419ms
+
+2028-12-18 15:07:28.478 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/encrypt/pcva.trade.b013_1.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","PINBLOCK":"147258","u_ani":"51981693052","CARDNO":"6251290030348888"}
+
+2028-12-18 15:07:28.482 [http-nio-8080-exec-7] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"54cfe0e232894fe0"},"REQ_BODY":{"PINBLOCK":"147258","CARDNO":"6251290030348888"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C002012028121815072854cfe0e232894fe0A149977","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150728","AgentId":"00000","TransServiceCode":"pcva.trade.b013_1.01","AgentLevel":"0"}}
+2028-12-18 15:07:28.539 [http-nio-8080-exec-7] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C002012028121815072854cfe0e232894fe0A149977","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150728","ResponseTime":"150834","TransServiceCode":"pcva.trade.b013_1.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"54cfe0e232894fe0"},"RSP_BODY":{"PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:28.540 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 64ms
+
+2028-12-18 15:07:28.572 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/credit/query/check/pcva.ccard.ccd052.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"num":"","u_connid":"1","PINBLOCK":"6973FB47D405DA0E","u_ani":"51981693052","CARDNO":"6251290040068835"}
+
+2028-12-18 15:07:28.573 [http-nio-8080-exec-6] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"16f4d2559fe44aba"},"REQ_BODY":{"CURRENCY":"0","PINBLOCK":"6973FB47D405DA0E","CARDNO":"6251290040068835"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C002012028121815072816f4d2559fe44abaA430877","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150728","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd052.01","AgentLevel":"0"}}
+2028-12-18 15:07:28.771 [http-nio-8080-exec-6] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"WARNINFO":"","ReturnCode":"000000","ResponseDate":"20260814","WARNFLAG":"","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"150728","RequestDate":"20281218","ConsumerSeqNo":"C002012028121815072816f4d2559fe44abaA430877","ReturnStatus":"S","ConsumerId":"C002","ResponseTime":"150707","TransServiceCode":"pcva.ccard.ccd052.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","AGENTSERIALNO":"262202608140001268023","MMDATE":"20281218","MMID":"16f4d2559fe44aba"},"RSP_BODY":{"PROGRAMTYPE":"","ORIGINALMESSAGETYPE":"","CSBXNO":"","NEWWORKCODE":"","AUTHID":"129672","NOREASONCODE":"","TRANTIME":"MMDDhhmmss","ORIGINALFWINST":"","SERVTP":"","SCINFO":"","ACCTNBR":"","BILLCURRENCY":"","INFO":"","MESSAGELEN":"2907","PRODCODE":"","BRNO":"001028","BANKID":"","RECVBANKNAME":"æ±åé¶è¡æ»è¡æ¸ç®ä¸­å¿","TRACK3":"","FORWARDINGCOUNTRYCODE":"","TRXNCURRENCY":"","HOSTDATE":"","AMOUNT":"","CARDNUMBER":"","ONLNBL":"","USERID":"","ACCOUNTRYCODE":"","CKBKUS":"","TRANSFERACCNM":"","TRACK2":"","TRANTP":"","TRACK1":"","TRANSFERACCNO":"","ACCTID1":"","TRANNBR":"","FILL":"","ACCTID2":"","BANKNO":"","BANKNAME":"","PAYEEACC":"","TLRNBR":"JNUSR","BRNNBR":"80888","PAYERACC":"","ACQUIRERBRNO":"","TRANDATE":"","IDNOTYPE":"","LOCALDATE":"20281218","ORIGINALRSPCODE":"","PROGTAMCODE":"","FUNTCD":"","CHANNEL":"1001","RETRIEVALNO":"","PROGRAMPERIOD":"","IDNO":"","WORKCODE":"","DCMTTP":"","TRANPRCSCD":"730000","RESPONSECODE":"00","PAYERNAME":"","ABSTCODE":"","LOCALTIME":"150728","CARDHOLDERINFO":"é¶è61å","RSPCODEDESC":"ä¿¡ç¨å¡äº¤ææå","TRXAMT":"","POSCODE":"011","FORWARDINGBRNO":"","NETWORKCODE":"","CVALID":"","CARDNO":"6251290040068835","CURRENCY":"0","MERCHANTID":"","CARDHOLDERNAME":"å¤æ°æ®","ORIGINALDATE":"","MCC":"","BILLAMOUNT":"","CVVCODE":"","FINACIALNETDATA":"é¶è57å","TRANAM":"","TRANCODE":"800003","TERMINALID":"","ORITRANNBR":"","POSCONDITIONCODE":"87","PBOCELEMENT":"","ORIGINALACINST":"","BRCHNO":"","RECVBANKNO":"80888","SYSTRACENUM":"505021","PRCSCD":"","MESSAGETYPE":"821","ADDDATA":"","MERCHANTNAME":"","ORIGINALTRACENUM":"","DCMTNO":"","PAYEENAME":"","PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:28.772 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 200ms
+
+2028-12-18 15:07:31.870 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/tranDetailSing/pcva.trade.ccd024.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290040068835"}
+
+2028-12-18 15:07:31.870 [http-nio-8080-exec-3] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"f517fe0bfecc4b06"},"REQ_BODY":{"CURRENCY":"0","pagerownum":"10000","TRANDATE":"20281218","CARDNO":"6251290040068835"},"SYS_HEAD":{"RequestDate":"20281218","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120281218150731f517fe0bfecc4b06A61529","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"150731","AgentId":"00000","TransServiceCode":"pcva.trade.ccd024.01","AgentLevel":"0"}}
+2028-12-18 15:07:31.996 [http-nio-8080-exec-3] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20281218","ConsumerSeqNo":"C0020120281218150731f517fe0bfecc4b06A61529","ReturnCode":"000001","ResponseDate":"20260814","ReturnStatus":"F","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"81.60å¹³å°æå¡ç :pcva.trade.ccd024.01\n         æ¸ éæµæ°´å·:C0020120281218150731f517fe0bfecc4b06A61529\n         éè¯¯ä¿¡æ¯:ä¿¡ç¨å¡æ ¸å¿è¿å:æ²¡ææææç»","RequestTime":"150731","ResponseTime":"150838","TransServiceCode":"pcva.trade.ccd024.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20281218","MMID":"f517fe0bfecc4b06"},"RSP_BODY":{"RspStruct":[]},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2028-12-18 15:07:31.997 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 127ms
+
+2026-08-03 15:54:18.514 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/elder/pcva.trade.q074.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052"}
+
+2026-08-03 15:54:18.514 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"a566d55370144948"},"REQ_BODY":{"PHONE_NO":"51981693052"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155418a566d55370144948A734798","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155418","AgentId":"00000","TransServiceCode":"pcva.trade.q074.01","AgentLevel":"0"}}
+2026-08-03 15:54:18.745 [http-nio-8080-exec-8] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155418a566d55370144948A734798","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155418","ResponseTime":"155341","TransServiceCode":"pcva.trade.q074.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"a566d55370144948"},"RSP_BODY":{"OLD_FLAG":"0"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:54:18.746 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 232ms
+
+2026-08-03 15:54:18.774 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/redirect/info
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"ANI":"51981693052"}
+
+2026-08-03 15:54:18.775 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/rdr001/q, 请求体={"phoneNo":"51981693052"}
+2026-08-03 15:54:21.783 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":500001,"msg":"系统繁忙，请稍候再试"}
+2026-08-03 15:54:21.783 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/tra002/query, 请求体={"phoneNo":"51981693052"}
+2026-08-03 15:54:21.787 [http-nio-8080-exec-5] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":0}
+2026-08-03 15:54:21.788 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 3014ms
+
+2026-08-03 15:54:21.808 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/redirect/info
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"ANI":"51981693052"}
+
+2026-08-03 15:54:21.808 [http-nio-8080-exec-2] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/rdr001/q, 请求体={"phoneNo":"51981693052"}
+2026-08-03 15:54:24.839 [http-nio-8080-exec-2] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":500001,"msg":"系统繁忙，请稍候再试"}
+2026-08-03 15:54:24.839 [http-nio-8080-exec-2] INFO  c.e.i.s.impl.RedirectServiceImpl - 发送请求: URL=http://172.16.214.200:9999/transaction/tra002/query, 请求体={"phoneNo":"51981693052"}
+2026-08-03 15:54:24.843 [http-nio-8080-exec-2] INFO  c.e.i.s.impl.RedirectServiceImpl - 交易返回 ={"code":0}
+2026-08-03 15:54:24.843 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 3035ms
+
+2026-08-03 15:54:45.851 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"查交易明细。","num":"","queryPrefix":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2026-08-03 15:54:45.852 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。
+2026-08-03 15:54:45.852 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720260803155445403030",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"155445",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20260803"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720260803155445403030"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20260803",
+						"ConsumerSeqNo":"37720260803155445403030",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"155445"
+					}
+				}
+			}
+		}
+	}
+}
+2026-08-03 15:54:47.041 [http-nio-8080-exec-10] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720260803155445403030","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"155445","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20260803","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"eec72c2e0e054ad694d7c6b615ab1b64"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20260803","ConsumerSeqNo":"37720260803155445403030","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"155445"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2026-08-03 15:54:47.042 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 1191ms
+
+2026-08-03 15:54:54.931 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"信用卡账户明细。","num":"0","queryPrefix":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2026-08-03 15:54:54.931 [http-nio-8080-exec-4] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。
+2026-08-03 15:54:54.931 [http-nio-8080-exec-4] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720260803155454508697",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"155454",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20260803"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720260803155454508697"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20260803",
+						"ConsumerSeqNo":"37720260803155454508697",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"155454"
+					}
+				}
+			}
+		}
+	}
+}
+2026-08-03 15:54:56.077 [http-nio-8080-exec-4] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720260803155454508697","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"155454","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20260803","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"信用卡账户明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"158252eaf7b149178117979f4de9c14b"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20260803","ConsumerSeqNo":"37720260803155454508697","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"155454"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2026-08-03 15:54:56.079 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 1148ms
+
+2026-08-03 15:55:15.760 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/idOrCardInquire
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","var_input":"6251290041412610","u_ani":"51981693052"}
+
+2026-08-03 15:55:15.760 [http-nio-8080-exec-9] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"8f05c1ce671c4cb7"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C00201202608031555158f05c1ce671c4cb7A303135","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155515","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd048.01","AgentLevel":"0"}}
+2026-08-03 15:55:16.436 [http-nio-8080-exec-9] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C00201202608031555158f05c1ce671c4cb7A303135","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155515","ResponseTime":"155438","TransServiceCode":"pcva.ccard.ccd048.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"8f05c1ce671c4cb7"},"RSP_BODY":{"PAGENUM":"1","TotalNum":"1","RspStruct":[{"BSCSUPPIND":"B","CARDLIMIT":"0","STATUSCD":"","NEWPLASTICCD":" ","NAME":"ææ¡æµè¯","CARDCODE":" ","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","COBRANDNO":"null","EXPIRYCCYYMM":"203407","CARDNO":"6251290041412610","CHIEFACCNO":""}],"TotalPages":"1","LISTPAGE":"1"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:16.437 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 677ms
+
+2026-08-03 15:55:16.489 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/getVisaInterview/pcva.ccard.ccd036.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:16.489 [http-nio-8080-exec-1] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"af7e283f3c1c4832"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155516af7e283f3c1c4832A694499","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155516","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd036.01","AgentLevel":"0"}}
+2026-08-03 15:55:16.956 [http-nio-8080-exec-1] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155516af7e283f3c1c4832A694499","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155516","ResponseTime":"155606","TransServiceCode":"pcva.ccard.ccd036.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"af7e283f3c1c4832"},"RSP_BODY":{"BSCSUPPIND":"B","CARDSTATUS":"A","CARDCOLLMETHOD":"C","PHONE":"15113950000","CBCHANNELTYPE":"07","PINVERIFYIND":"Y","CARDMEDIA":"B","ACCNO":"00000000000008020058","PLASTICCDA":"A","CARDCODE":" ","ISFLAG":"N","ECMAXBAL":"0","CUSTNAME":"ææ¡æµè¯","EXPIRYCCYYMM":"574370","EMBNAME":"WANG JIANYING","CARDNO":"6251290041412610","CURRENCY":"0","SMSIND":"1","ECCHIPTYPE":"2","IDTYPE":"10101","CARDLIMIT":"0","CHTYPE":"01","CARDDELIVERYADDR":"H","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","ECOPENIND":"0","ADDDATA":"1120101199809260131","IDNO":"120101199809260131"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:16.957 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 468ms
+
+2026-08-03 15:55:16.983 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/menu/queryPass/pcva.ccard.ccd070.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:16.983 [http-nio-8080-exec-7] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"1c292f1c9ae64901"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C00201202608031555161c292f1c9ae64901A373577","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155516","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd070.01","AgentLevel":"0"}}
+2026-08-03 15:55:17.375 [http-nio-8080-exec-7] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C00201202608031555161c292f1c9ae64901A373577","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155516","ResponseTime":"155439","TransServiceCode":"pcva.ccard.ccd070.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"1c292f1c9ae64901"},"RSP_BODY":{"ALREADYSETFLAG":"false"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:17.376 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 393ms
+
+2026-08-03 15:55:33.429 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/encrypt/pcva.trade.b013_1.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","PINBLOCK":"147258","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:33.429 [http-nio-8080-exec-6] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"d04657694c974e51"},"REQ_BODY":{"PINBLOCK":"147258","CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155533d04657694c974e51A398047","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155533","AgentId":"00000","TransServiceCode":"pcva.trade.b013_1.01","AgentLevel":"0"}}
+2026-08-03 15:55:33.488 [http-nio-8080-exec-6] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155533d04657694c974e51A398047","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155533","ResponseTime":"155623","TransServiceCode":"pcva.trade.b013_1.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"d04657694c974e51"},"RSP_BODY":{"PINBLOCK":"53E316CB698CCFFD"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:33.489 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 61ms
+
+2026-08-03 15:55:33.524 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/credit/check/pcva.ccard.ccd050.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"num":"","u_connid":"1","PINBLOCK":"53E316CB698CCFFD","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:33.525 [http-nio-8080-exec-3] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"35b4cd30f1a14805"},"REQ_BODY":{"CURRENCY":"0","TRANTIME":"20260803","LOCALTIME":"0803155533","PINBLOCK":"53E316CB698CCFFD","CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C002012026080315553335b4cd30f1a14805A704136","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155533","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd050.01","AgentLevel":"0"}}
+2026-08-03 15:55:33.976 [http-nio-8080-exec-3] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"WARNINFO":"","ReturnCode":"000000","ResponseDate":"20260814","WARNFLAG":"","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155533","RequestDate":"20260803","ConsumerSeqNo":"C002012026080315553335b4cd30f1a14805A704136","ReturnStatus":"S","ConsumerId":"C002","ResponseTime":"155456","TransServiceCode":"pcva.ccard.ccd050.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","AGENTSERIALNO":"262202608140001268116","MMDATE":"20260803","MMID":"35b4cd30f1a14805"},"RSP_BODY":{"PROGRAMTYPE":"","ORIGINALMESSAGETYPE":"","CSBXNO":"","NEWWORKCODE":"","AUTHID":"493400","NOREASONCODE":"","TRANTIME":"0803155533","ORIGINALFWINST":"","SERVTP":"","SCINFO":"","ACCTNBR":"","BILLCURRENCY":"","INFO":"","MESSAGELEN":"2907","PRODCODE":"","BRNO":"80888","BANKID":"","RECVBANKNAME":"æ±åé¶è¡æ»è¡æ¸ç®ä¸­å¿","TRACK3":"","FORWARDINGCOUNTRYCODE":"","TRXNCURRENCY":"","HOSTDATE":"","AMOUNT":"","CARDNUMBER":"","ONLNBL":"","USERID":"","ACCOUNTRYCODE":"","CKBKUS":"","TRANSFERACCNM":"","TRACK2":"","TRANTP":"","TRACK1":"","TRANSFERACCNO":"","ACCTID1":"","TRANNBR":"","FILL":"","ACCTID2":"","BANKNO":"","BANKNAME":"","PAYEEACC":"","TLRNBR":"JNUSR","BRNNBR":"80888","PAYERACC":"","ACQUIRERBRNO":"","TRANDATE":"","IDNOTYPE":"","LOCALDATE":"20260803","ORIGINALRSPCODE":"","PROGTAMCODE":"","FUNTCD":"","CHANNEL":"1001","RETRIEVALNO":"","PROGRAMPERIOD":"","IDNO":"","WORKCODE":"","DCMTTP":"","TRANPRCSCD":"730000","RESPONSECODE":"00","PAYERNAME":"","ABSTCODE":"","LOCALTIME":"155533","CARDHOLDERINFO":"é¶è61å","RSPCODEDESC":"ä¿¡ç¨å¡äº¤ææå","TRXAMT":"","POSCODE":"011","FORWARDINGBRNO":"","NETWORKCODE":"","CVALID":"","CARDNO":"6251290041412610","CURRENCY":"0","MERCHANTID":"","CARDHOLDERNAME":"","ORIGINALDATE":"","MCC":"","BILLAMOUNT":"","CVVCODE":"","FINACIALNETDATA":"é¶è57å","TRANAM":"","TRANCODE":"800007","TERMINALID":"","ORITRANNBR":"","POSCONDITIONCODE":"87","PBOCELEMENT":"","ORIGINALACINST":"","BRCHNO":"","RECVBANKNO":"80888","SYSTRACENUM":"505025","PRCSCD":"","MESSAGETYPE":"821","ADDDATA":"","MERCHANTNAME":"","ORIGINALTRACENUM":"","DCMTNO":"","PAYEENAME":"","PINBLOCK":"53E316CB698CCFFD"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:33.977 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 453ms
+
+2026-08-03 15:55:39.590 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/checkWeakPassword
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"PINBLOCK":"147258","IDNO":"","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:39.591 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 1ms
+
+2026-08-03 15:55:45.377 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/checkout
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"password":"147258","confirmPassword":"147258"}
+
+2026-08-03 15:55:45.378 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 1ms
+
+2026-08-03 15:55:45.394 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/getVisaInterview/pcva.ccard.ccd036.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:55:45.395 [http-nio-8080-exec-2] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"b3b41b87c3284b01"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155545b3b41b87c3284b01A862910","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155545","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd036.01","AgentLevel":"0"}}
+2026-08-03 15:55:45.570 [http-nio-8080-exec-2] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155545b3b41b87c3284b01A862910","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155545","ResponseTime":"155635","TransServiceCode":"pcva.ccard.ccd036.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"b3b41b87c3284b01"},"RSP_BODY":{"BSCSUPPIND":"B","CARDSTATUS":"A","CARDCOLLMETHOD":"C","PHONE":"15113950000","CBCHANNELTYPE":"07","PINVERIFYIND":"Y","CARDMEDIA":"B","ACCNO":"00000000000008020058","PLASTICCDA":"A","CARDCODE":" ","ISFLAG":"N","ECMAXBAL":"0","CUSTNAME":"ææ¡æµè¯","EXPIRYCCYYMM":"574370","EMBNAME":"WANG JIANYING","CARDNO":"6251290041412610","CURRENCY":"0","SMSIND":"1","ECCHIPTYPE":"2","IDTYPE":"10101","CARDLIMIT":"0","CHTYPE":"01","CARDDELIVERYADDR":"H","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","ECOPENIND":"0","ADDDATA":"1120101199809260131","IDNO":"120101199809260131"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:45.570 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 176ms
+
+2026-08-03 15:55:45.598 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/encrypt/pcva.trade.b013_1.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","PINBLOCK":"147258","u_ani":"51981693052","CARDNO":"6251290030348888"}
+
+2026-08-03 15:55:45.598 [http-nio-8080-exec-10] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"eb3637d87ea648c4"},"REQ_BODY":{"PINBLOCK":"147258","CARDNO":"6251290030348888"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155545eb3637d87ea648c4A13790","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155545","AgentId":"00000","TransServiceCode":"pcva.trade.b013_1.01","AgentLevel":"0"}}
+2026-08-03 15:55:45.652 [http-nio-8080-exec-10] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155545eb3637d87ea648c4A13790","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155545","ResponseTime":"155508","TransServiceCode":"pcva.trade.b013_1.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"eb3637d87ea648c4"},"RSP_BODY":{"PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:45.653 [http-nio-8080-exec-10] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 55ms
+
+2026-08-03 15:55:45.681 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/credit/query/set/pcva.ccard.ccd006.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"PINBLOCK_old":"1","u_connid":"1","PINBLOCK":"6973FB47D405DA0E","IDNO":"120101199809260131","CARDNO":"6251290041412610","u_ani":"51981693052","PINBLOCKFLAG":"1"}
+
+2026-08-03 15:55:45.682 [http-nio-8080-exec-4] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"e0969c4e5acb4946"},"REQ_BODY":{"CURRENCY":"0","IDTYPE":"10101","ADDDATA":"1120101199809260131","SCINFO":"6973FB47D405DA0E","IDNO":"120101199809260131","PINBLOCKFLAG":"1","CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155545e0969c4e5acb4946A178119","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155545","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd006.01","AgentLevel":"0"}}
+2026-08-03 15:55:45.975 [http-nio-8080-exec-4] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"WARNINFO":"","ReturnCode":"000000","ResponseDate":"20260814","WARNFLAG":"","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155545","RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155545e0969c4e5acb4946A178119","ReturnStatus":"S","ConsumerId":"C002","ResponseTime":"155635","TransServiceCode":"pcva.ccard.ccd006.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","AGENTSERIALNO":"262202608140001268118","MMDATE":"20260803","MMID":"e0969c4e5acb4946"},"RSP_BODY":{"PROGRAMTYPE":"","ORIGINALMESSAGETYPE":"","CSBXNO":"","NEWWORKCODE":"","AUTHID":"299907","NOREASONCODE":"","TRANTIME":"MMDDhhmmss","ORIGINALFWINST":"","SERVTP":"","SCINFO":"6973FB47D405DA0E","ACCTNBR":"","BILLCURRENCY":"","INFO":"","MESSAGELEN":"2907","PRODCODE":"","BRNO":"001028","BANKID":"","RECVBANKNAME":"æ±åé¶è¡æ»è¡æ¸ç®ä¸­å¿","TRACK3":"","FORWARDINGCOUNTRYCODE":"","TRXNCURRENCY":"","HOSTDATE":"","AMOUNT":"","CARDNUMBER":"","ONLNBL":"","USERID":"","ACCOUNTRYCODE":"","CKBKUS":"","TRANSFERACCNM":"","TRACK2":"","TRANTP":"","TRACK1":"","TRANSFERACCNO":"","ACCTID1":"","TRANNBR":"","FILL":"","ACCTID2":"","BANKNO":"","BANKNAME":"","PAYEEACC":"","TLRNBR":"JNUSR","BRNNBR":"80888","PAYERACC":"","ACQUIRERBRNO":"","TRANDATE":"","IDNOTYPE":"","LOCALDATE":"20260803","ORIGINALRSPCODE":"","PROGTAMCODE":"","FUNTCD":"","CHANNEL":"1001","RETRIEVALNO":"","PROGRAMPERIOD":"","IDNO":"120101199809260131","WORKCODE":"","DCMTTP":"","TRANPRCSCD":"","RESPONSECODE":"00","PAYERNAME":"","ABSTCODE":"","LOCALTIME":"155545","CARDHOLDERINFO":"é¶è61å","RSPCODEDESC":"ä¿¡ç¨å¡äº¤ææå","TRXAMT":"","POSCODE":"011","FORWARDINGBRNO":"","NETWORKCODE":"","CVALID":"","CARDNO":"6251290041412610","CURRENCY":"0","MERCHANTID":"","CARDHOLDERNAME":"ææ¡æµè¯","ORIGINALDATE":"","MCC":"","BILLAMOUNT":"","CVVCODE":"","FINACIALNETDATA":"é¶è57å","TRANAM":"","TRANCODE":"800001","TERMINALID":"","ORITRANNBR":"","POSCONDITIONCODE":"87","PBOCELEMENT":"","ORIGINALACINST":"","BRCHNO":"","RECVBANKNO":"80888","SYSTRACENUM":"505026","PRCSCD":"","MESSAGETYPE":"0830","ADDDATA":"1120101199809260131","MERCHANTNAME":"","ORIGINALTRACENUM":"","DCMTNO":"","PAYEENAME":"","PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:55:45.976 [http-nio-8080-exec-4] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 295ms
+
+2026-08-03 15:56:10.119 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"查交易明细。","num":"0","queryPrefix":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2026-08-03 15:56:10.119 [http-nio-8080-exec-9] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。
+2026-08-03 15:56:10.119 [http-nio-8080-exec-9] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720260803155610879102",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"155610",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20260803"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720260803155610879102"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20260803",
+						"ConsumerSeqNo":"37720260803155610879102",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"155610"
+					}
+				}
+			}
+		}
+	}
+}
+2026-08-03 15:56:10.991 [http-nio-8080-exec-9] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720260803155610879102","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"155610","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20260803","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回一个关键词（挂失 余额 明细 开户行 密码 激活 进度查询 账单 额度 分期 还款 投诉及建议 人工 限额 异常），如果与上述关键词意义相近或者同音近似，例如（挂饰、挂石、化石、化师）只返回关键词（挂失），则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：查交易明细。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"647f5d1a792a4da2b4ea00ffd8ca4c8c"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20260803","ConsumerSeqNo":"37720260803155610879102","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"155610"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2026-08-03 15:56:10.992 [http-nio-8080-exec-9] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 873ms
+
+2026-08-03 15:56:18.048 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/rsp/getKbpAnswer
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"knowledgeBase":" ","querySuffix":"信用卡账户明细。","num":"0","queryPrefix":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容："}
+
+2026-08-03 15:56:18.048 [http-nio-8080-exec-1] INFO  c.e.idp.service.impl.KbpServiceImpl - 生成的KBP查询字符串: 帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。
+2026-08-03 15:56:18.048 [http-nio-8080-exec-1] INFO  c.e.idp.service.impl.KbpServiceImpl - 发送KBP请求: URL=http://172.34.1.49:8001/ESBService/COMMON/JsonProxyService, 请求体={
+	"Transaction":{
+		"Header":{
+			"sysHeader":{
+				"ver":"1.0",
+				"pinIndex":"",
+				"bizType":"",
+				"authContext":"",
+				"msgId":"37720260803155618911817",
+				"clientCd":"377",
+				"pinValue":"",
+				"authId":"",
+				"authPara":"",
+				"orgCode":"",
+				"serverCd":"757",
+				"msgTime":"155618",
+				"serviceCd":"P00001061653",
+				"operation":"llm.answer.0003.05",
+				"msgDate":"20260803"
+			}
+		},
+		"Body":{
+			"request":{
+				"bizBody":{
+					"usernum":"88888",
+					"streamtype":"0",
+					"flag":"0",
+					"max_tokens":"2048",
+					"knowledge_base":" ",
+					"usertype":"00",
+					"channelnum":"377",
+					"chattype":"01",
+					"messages":{
+						"busitype":"00",
+						"query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。",
+						"knowledge_base":" "
+					},
+					"model":"qwen-72b",
+					"tasknumber":"37720260803155618911817"
+				},
+				"bizHeader":{
+					"SYS_HEAD":{
+						"TransServiceScene":"",
+						"RequestDate":"20260803",
+						"ConsumerSeqNo":"37720260803155618911817",
+						"TdgBrah":"80888",
+						"ConsumerId":"377",
+						"ChannelCode":"377",
+						"RequestTime":"155618"
+					}
+				}
+			}
+		}
+	}
+}
+2026-08-03 15:56:19.051 [http-nio-8080-exec-1] INFO  c.e.idp.service.impl.KbpServiceImpl - 收到KBP响应: {"Transaction":{"Header":{"sysHeader":{"ver":"1.0","pinIndex":"","bizType":"","authContext":"","msgId":"37720260803155618911817","clientCd":"377","pinValue":"","authId":"","authPara":"","orgCode":"","serverCd":"757","msgTime":"155618","serviceCd":"P00001061653","operation":"llm.answer.0003.05","msgDate":"20260803","resCode":"000000","resText":"交易成功"}},"Body":{"response":{"bizBody":{"usernum":"88888","streamtype":"0","busitype":"00","answer":"信用卡账户明细","max_tokens":"2048","query":"帮我处理下通话内容中客户的意图，只返回关键词（个人账户明细 信用卡账户明细 单位账户明细），如果与上述关键词意义相近或者同音近似，则依旧返回上述关键词，通话内容与上述关键词无关，则返回关键词（无法识别），通话内容：信用卡账户明细。","knowledge_base":"","usertype":"00","channelnum":"377","chattype":"01","model":"qwen-72b","tasknumber":"acf0b0678acf4fda80ebdbdb72fdcd8e"},"bizHeader":{"SYS_HEAD":{"TransServiceScene":"","RequestDate":"20260803","ConsumerSeqNo":"37720260803155618911817","TdgBrah":"80888","ConsumerId":"377","ChannelCode":"377","RequestTime":"155618"},"errorCode":"000","errorMsg":"交易成功！"}}}}}
+2026-08-03 15:56:19.052 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 1004ms
+
+2026-08-03 15:56:36.731 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/idOrCardInquire
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","var_input":"6251290041412610","u_ani":"51981693052"}
+
+2026-08-03 15:56:36.731 [http-nio-8080-exec-7] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"b095e0aca14c488f"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155636b095e0aca14c488fA62352","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155636","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd048.01","AgentLevel":"0"}}
+2026-08-03 15:56:36.867 [http-nio-8080-exec-7] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155636b095e0aca14c488fA62352","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155636","ResponseTime":"155726","TransServiceCode":"pcva.ccard.ccd048.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"b095e0aca14c488f"},"RSP_BODY":{"PAGENUM":"1","TotalNum":"1","RspStruct":[{"BSCSUPPIND":"B","CARDLIMIT":"0","STATUSCD":"","NEWPLASTICCD":" ","NAME":"ææ¡æµè¯","CARDCODE":" ","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","COBRANDNO":"null","EXPIRYCCYYMM":"203407","CARDNO":"6251290041412610","CHIEFACCNO":""}],"TotalPages":"1","LISTPAGE":"1"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:36.868 [http-nio-8080-exec-7] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 137ms
+
+2026-08-03 15:56:36.962 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/getVisaInterview/pcva.ccard.ccd036.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:56:36.963 [http-nio-8080-exec-6] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"ca09408c568d4006"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155636ca09408c568d4006A730149","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155636","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd036.01","AgentLevel":"0"}}
+2026-08-03 15:56:37.110 [http-nio-8080-exec-6] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155636ca09408c568d4006A730149","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155636","ResponseTime":"155559","TransServiceCode":"pcva.ccard.ccd036.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"ca09408c568d4006"},"RSP_BODY":{"BSCSUPPIND":"B","CARDSTATUS":"A","CARDCOLLMETHOD":"C","PHONE":"15113950000","CBCHANNELTYPE":"07","PINVERIFYIND":"Y","CARDMEDIA":"B","ACCNO":"00000000000008020058","PLASTICCDA":"A","CARDCODE":" ","ISFLAG":"N","ECMAXBAL":"0","CUSTNAME":"ææ¡æµè¯","EXPIRYCCYYMM":"574370","EMBNAME":"WANG JIANYING","CARDNO":"6251290041412610","CURRENCY":"0","SMSIND":"1","ECCHIPTYPE":"2","IDTYPE":"10101","CARDLIMIT":"0","CHTYPE":"01","CARDDELIVERYADDR":"H","ISOLDCARD":"N","PLASTICCD":" ","PRODUCTNO":"1000","ECOPENIND":"0","ADDDATA":"1120101199809260131","IDNO":"120101199809260131"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:37.111 [http-nio-8080-exec-6] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 149ms
+
+2026-08-03 15:56:37.133 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/menu/queryPass/pcva.ccard.ccd070.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:56:37.134 [http-nio-8080-exec-3] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"cdcd5453c2dc4366"},"REQ_BODY":{"CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155637cdcd5453c2dc4366A193380","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155637","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd070.01","AgentLevel":"0"}}
+2026-08-03 15:56:37.306 [http-nio-8080-exec-3] INFO  c.e.i.s.i.MenuTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155637cdcd5453c2dc4366A193380","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155637","ResponseTime":"155727","TransServiceCode":"pcva.ccard.ccd070.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"cdcd5453c2dc4366"},"RSP_BODY":{"ALREADYSETFLAG":"true"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:37.307 [http-nio-8080-exec-3] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 174ms
+
+2026-08-03 15:56:42.951 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/encrypt/pcva.trade.b013_1.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","PINBLOCK":"147258","u_ani":"51981693052","CARDNO":"6251290030348888"}
+
+2026-08-03 15:56:42.951 [http-nio-8080-exec-8] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"a9a2451a9dad4185"},"REQ_BODY":{"PINBLOCK":"147258","CARDNO":"6251290030348888"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C0020120260803155642a9a2451a9dad4185A503271","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155642","AgentId":"00000","TransServiceCode":"pcva.trade.b013_1.01","AgentLevel":"0"}}
+2026-08-03 15:56:43.017 [http-nio-8080-exec-8] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C0020120260803155642a9a2451a9dad4185A503271","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155642","ResponseTime":"155605","TransServiceCode":"pcva.trade.b013_1.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"a9a2451a9dad4185"},"RSP_BODY":{"PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:43.018 [http-nio-8080-exec-8] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 67ms
+
+2026-08-03 15:56:43.035 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/password/credit/query/check/pcva.ccard.ccd052.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"num":"","u_connid":"1","PINBLOCK":"6973FB47D405DA0E","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:56:43.038 [http-nio-8080-exec-5] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"0ff78e749c604b00"},"REQ_BODY":{"CURRENCY":"0","PINBLOCK":"6973FB47D405DA0E","CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C00201202608031556430ff78e749c604b00A442703","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155643","AgentId":"00000","TransServiceCode":"pcva.ccard.ccd052.01","AgentLevel":"0"}}
+2026-08-03 15:56:43.259 [http-nio-8080-exec-5] INFO  c.e.i.s.i.PasswordTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"WARNINFO":"","ReturnCode":"000000","ResponseDate":"20260814","WARNFLAG":"","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155643","RequestDate":"20260803","ConsumerSeqNo":"C00201202608031556430ff78e749c604b00A442703","ReturnStatus":"S","ConsumerId":"C002","ResponseTime":"155733","TransServiceCode":"pcva.ccard.ccd052.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","AGENTSERIALNO":"262202608140001268120","MMDATE":"20260803","MMID":"0ff78e749c604b00"},"RSP_BODY":{"PROGRAMTYPE":"","ORIGINALMESSAGETYPE":"","CSBXNO":"","NEWWORKCODE":"","AUTHID":"638853","NOREASONCODE":"","TRANTIME":"MMDDhhmmss","ORIGINALFWINST":"","SERVTP":"","SCINFO":"","ACCTNBR":"","BILLCURRENCY":"","INFO":"","MESSAGELEN":"2907","PRODCODE":"","BRNO":"001028","BANKID":"","RECVBANKNAME":"æ±åé¶è¡æ»è¡æ¸ç®ä¸­å¿","TRACK3":"","FORWARDINGCOUNTRYCODE":"","TRXNCURRENCY":"","HOSTDATE":"","AMOUNT":"","CARDNUMBER":"","ONLNBL":"","USERID":"","ACCOUNTRYCODE":"","CKBKUS":"","TRANSFERACCNM":"","TRACK2":"","TRANTP":"","TRACK1":"","TRANSFERACCNO":"","ACCTID1":"","TRANNBR":"","FILL":"","ACCTID2":"","BANKNO":"","BANKNAME":"","PAYEEACC":"","TLRNBR":"JNUSR","BRNNBR":"80888","PAYERACC":"","ACQUIRERBRNO":"","TRANDATE":"","IDNOTYPE":"","LOCALDATE":"20260803","ORIGINALRSPCODE":"","PROGTAMCODE":"","FUNTCD":"","CHANNEL":"1001","RETRIEVALNO":"","PROGRAMPERIOD":"","IDNO":"","WORKCODE":"","DCMTTP":"","TRANPRCSCD":"730000","RESPONSECODE":"00","PAYERNAME":"","ABSTCODE":"","LOCALTIME":"155643","CARDHOLDERINFO":"é¶è61å","RSPCODEDESC":"ä¿¡ç¨å¡äº¤ææå","TRXAMT":"","POSCODE":"011","FORWARDINGBRNO":"","NETWORKCODE":"","CVALID":"","CARDNO":"6251290041412610","CURRENCY":"0","MERCHANTID":"","CARDHOLDERNAME":"ææ¡æµè¯","ORIGINALDATE":"","MCC":"","BILLAMOUNT":"","CVVCODE":"","FINACIALNETDATA":"é¶è57å","TRANAM":"","TRANCODE":"800003","TERMINALID":"","ORITRANNBR":"","POSCONDITIONCODE":"87","PBOCELEMENT":"","ORIGINALACINST":"","BRCHNO":"","RECVBANKNO":"80888","SYSTRACENUM":"505028","PRCSCD":"","MESSAGETYPE":"821","ADDDATA":"","MERCHANTNAME":"","ORIGINALTRACENUM":"","DCMTNO":"","PAYEENAME":"","PINBLOCK":"6973FB47D405DA0E"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:43.260 [http-nio-8080-exec-5] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 225ms
+
+2026-08-03 15:56:46.690 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://172.34.1.212/idp/if/v1/transaction/credit/tranDetailSing/pcva.trade.ccd024.01
+Request Method: GET
+Client IP: 172.34.1.212
+Request Parameters: {"u_connid":"1","u_ani":"51981693052","CARDNO":"6251290041412610"}
+
+2026-08-03 15:56:46.690 [http-nio-8080-exec-2] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 发送请求: URL=http://172.16.204.43:7777, 请求体={"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"26aa29f1bd294606"},"REQ_BODY":{"CURRENCY":"0","pagerownum":"10000","TRANDATE":"20260803","CARDNO":"6251290041412610"},"SYS_HEAD":{"RequestDate":"20260803","DeviceNum":"51981693052","ConsumerSeqNo":"C002012026080315564626aa29f1bd294606A945754","ConsumerId":"C002","TranTellerNo":"jnuser","RequestTime":"155646","AgentId":"00000","TransServiceCode":"pcva.trade.ccd024.01","AgentLevel":"0"}}
+2026-08-03 15:56:47.329 [http-nio-8080-exec-2] INFO  c.e.i.s.i.CreditTransactionServiceImpl - 交易返回 ={"SYS_HEAD":{"RequestDate":"20260803","ConsumerSeqNo":"C002012026080315564626aa29f1bd294606A945754","ReturnCode":"000000","ResponseDate":"20260814","ReturnStatus":"S","ConsumerId":"C002","TranTellerNo":"JNUSR","ReturnMessage":"äº¤ææå","RequestTime":"155646","ResponseTime":"155609","TransServiceCode":"pcva.trade.ccd024.01","TranBranchId":"80888"},"APP_HEAD":{"CHANNELCODE":"C002","MMDATE":"20260803","MMID":"26aa29f1bd294606"},"RSP_BODY":{"TotalNum":"2","RspStruct":[{"PCMRSPMAP":"ä¿¡ç¨å¡äº¤ææå","AMOUNT":"200","TXNDESC":"åç°","PCITRANMDATE":"0814155338","PCITRACENO":"134488","TRANDATE":"20260803","OAMTXNCD":"700018","CARDNO":"6251290041412610","RESPONSECD":"00","MERCHNAME":""},{"PCMRSPMAP":"ä¿¡ç¨å¡åéå¶çå¡","AMOUNT":"200","TXNDESC":"åç°","PCITRANMDATE":"0814154712","PCITRACENO":"502903","TRANDATE":"20260803","OAMTXNCD":"700018","CARDNO":"6251290041412610","RESPONSECD":"62","MERCHNAME":""}],"LISTSIZE":"2","TotalPages":"1","LISTPAGE":"1"},"CHARGE_HEAD":{"FEEINFO_LIST":[]}}
+2026-08-03 15:56:47.330 [http-nio-8080-exec-2] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 640ms
+

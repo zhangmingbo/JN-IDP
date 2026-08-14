@@ -1,0 +1,89 @@
+2025-10-30 10:45:47.667 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-10-30 10:45:47.668 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 33880 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-10-30 10:45:47.672 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-30 10:45:48.651 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:45:48.652 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-30 10:45:48.653 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-10-30 10:45:48.787 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-10-30 10:45:48.943 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-10-30 10:45:48.947 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-10-30 10:45:51.476 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-10-30 10:45:51.643 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:45:51.657 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-10-30 10:45:51.671 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-10-30 10:45:51.690 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-10-30 10:45:51.766 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-10-30 10:45:51.770 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryPasswordUsingGET_1
+2025-10-30 10:45:51.790 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-10-30 10:45:51.810 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-10-30 10:45:51.824 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 4.424 seconds (JVM running for 6.589)
+2025-10-30 10:46:36.827 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30 10:46:36.960 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-10-30 10:46:36.973 [http-nio-8080-exec-1] INFO  com.egoo.idp.utils.StrUtil - prpmpt====>123
+2025-10-30 10:46:37.039 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 183ms
+
+2025-10-30 10:47:06.693 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 13296 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-10-30 10:47:06.693 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-10-30 10:47:06.695 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-30 10:47:07.464 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:47:07.465 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-30 10:47:07.465 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-10-30 10:47:07.581 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-10-30 10:47:07.722 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-10-30 10:47:07.725 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-10-30 10:47:10.061 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-10-30 10:47:10.211 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:47:10.221 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-10-30 10:47:10.230 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-10-30 10:47:10.246 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-10-30 10:47:10.312 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-10-30 10:47:10.316 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryPasswordUsingGET_1
+2025-10-30 10:47:10.333 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-10-30 10:47:10.354 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-10-30 10:47:10.367 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 3.873 seconds (JVM running for 5.761)
+2025-10-30 10:47:15.530 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30 10:47:15.626 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-10-30 10:47:15.633 [http-nio-8080-exec-1] INFO  com.egoo.idp.utils.StrUtil - prpmpt====>123
+2025-10-30 10:47:15.633 [http-nio-8080-exec-1] INFO  com.egoo.idp.utils.StrUtil - PROMPT_LENGTH====>0
+2025-10-30 10:47:15.673 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 128ms
+
+2025-10-30 10:50:34.681 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-10-30 10:50:34.682 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 14648 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-10-30 10:50:34.682 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-30 10:50:35.406 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:50:35.407 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-30 10:50:35.407 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-10-30 10:50:35.517 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-10-30 10:50:35.647 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-10-30 10:50:35.650 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-10-30 10:50:37.764 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-10-30 10:50:37.915 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-30 10:50:37.927 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-10-30 10:50:37.937 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-10-30 10:50:37.954 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-10-30 10:50:38.017 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: idOrCardInquireUsingGET_1
+2025-10-30 10:50:38.021 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: queryPasswordUsingGET_1
+2025-10-30 10:50:38.039 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-10-30 10:50:38.057 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-10-30 10:50:38.068 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 3.592 seconds (JVM running for 5.407)
+2025-10-30 10:50:44.875 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30 10:50:44.965 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Request URL: http://localhost:8080/idp/if/v1/rsp/test
+Request Method: GET
+Client IP: 0:0:0:0:0:0:0:1
+Request Parameters: {}
+
+2025-10-30 10:50:44.972 [http-nio-8080-exec-1] INFO  com.egoo.idp.utils.StrUtil - prpmpt====>123
+2025-10-30 10:50:44.972 [http-nio-8080-exec-1] INFO  com.egoo.idp.utils.StrUtil - PROMPT_LENGTH====>380
+2025-10-30 10:50:45.011 [http-nio-8080-exec-1] INFO  com.egoo.idp.config.LogInterceptor - Response Status: 200
+Request Processing Time: 126ms
+

@@ -1,0 +1,38 @@
+2025-09-02 16:24:19.053 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 26828 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-02 16:24:19.053 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-02 16:24:19.057 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-02 16:24:19.646 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'restTemplate' defined in class path resource [com/egoo/idp/config/RestTemplateConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=restTemplateConfig; factoryMethodName=restTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/egoo/idp/config/RestTemplateConfig.class]] for bean 'restTemplate': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=restTemplate; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/egoo/idp/config/AppConfig.class]] bound.
+2025-09-02 16:24:19.666 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'restTemplate', defined in class path resource [com/egoo/idp/config/RestTemplateConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/egoo/idp/config/AppConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-09-02 16:26:02.521 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-02 16:26:02.523 [main] INFO  com.egoo.idp.IdpApplication - Starting IdpApplication using Java 1.8.0_201 on LAPTOP-K4ANGEDV with PID 28960 (D:\java\jiangnan\idp\target\classes started by sunshangfeng in D:\java\jiangnan\idp)
+2025-09-02 16:26:02.524 [main] INFO  com.egoo.idp.IdpApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-02 16:26:03.398 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-02 16:26:03.399 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-02 16:26:03.399 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-09-02 16:26:03.522 [main] INFO  o.a.c.c.C.[.[localhost].[/idp] - Initializing Spring embedded WebApplicationContext
+2025-09-02 16:26:03.680 [main] WARN  c.b.m.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.egoo.idp.entity.dto.HistorySessionInfoDto".
+2025-09-02 16:26:03.684 [main] WARN  c.b.m.c.injector.DefaultSqlInjector - class com.egoo.idp.entity.dto.HistorySessionInfoDto ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2025-09-02 16:26:07.172 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-09-02 16:26:07.330 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-02 16:26:07.343 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2025-09-02 16:26:07.354 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2025-09-02 16:26:07.372 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2025-09-02 16:26:07.454 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2025-09-02 16:26:07.455 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_1
+2025-09-02 16:26:07.460 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: checkWeakPasswordUsingGET_1
+2025-09-02 16:26:07.462 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: processTransactionUsingGET_2
+2025-09-02 16:26:07.464 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: setUsingGET_1
+2025-09-02 16:26:07.476 [main] INFO  com.egoo.idp.IdpApplication - Started IdpApplication in 5.218 seconds (JVM running for 7.854)
