@@ -78,7 +78,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
             } else {
                 prompt = "暂未查询到您的信用卡申请进度,如有疑问,请转接人工服务";
             }
-            result.put("prompt",prompt);
+            StrUtil.capturePrompt(prompt, result);
         } catch (Exception e) {
             log.error("查询信用卡进度异常",e);
         }
@@ -329,33 +329,60 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                  * STATUSCD 状态
                  *
                  */
-                if (jsonObj.getJSONObject("RSP_BODY").getString("LISTSIZE").equals("1")) {
-                    if (ObjectUtils.isEmpty(JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].STATUSCD").toString().trim())) {
-                        result.put("CCARDLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDLIMIT"));
-                        result.put("CCARDAVAILLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDAVAILLIMIT"));
-                        result.put("CTDCASHAMOT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CTDCASHAMOT"));
-                        result.put("CCARDAVAILCASHLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDAVAILCASHLIMIT"));
-                        prompt = prompt + "您的信用卡信用额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDLIMIT")) + " ";
-                        prompt = prompt + "可用额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDAVAILLIMIT")) + " ";
-                        prompt = prompt + "预借现金额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CTDCASHAMOT")) + " ";
-                        prompt = prompt + "可用现金额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[0].CCARDAVAILCASHLIMIT")) + " ";
+                int totalPages = Integer.parseInt(jsonObj.getJSONObject("RSP_BODY").getString("TotalPages"));
+                JSONArray allCards = new JSONArray();
+                // 收集第一页数据
+                for (int i = 0; i < jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size(); i++) {
+                    allCards.add(jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(i));
+                }
+                // 翻页获取后续页数据
+                for (int page = 2; page <= totalPages; page++) {
+                    JSONObject defObjPage = Util.getBasicJson(transServiceCode, u_ani, u_connid);
+                    JSONObject tempPage = new JSONObject();
+                    tempPage.put("IDTYPE", "10101");
+                    tempPage.put("IDNO", IDNO);
+                    tempPage.put("currpage", String.valueOf(page));
+                    defObjPage.put("REQ_BODY", tempPage);
+                    JSONObject jsonObjPage = sendRequest(defObjPage);
+                    if (jsonObjPage.getJSONObject("SYS_HEAD").getString("ReturnCode").equals("000000")) {
+                        for (int i = 0; i < jsonObjPage.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size(); i++) {
+                            allCards.add(jsonObjPage.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(i));
+                        }
+                    }
+                }
+
+                if (allCards.size() == 1) {
+                    JSONObject card = allCards.getJSONObject(0);
+                    if (ObjectUtils.isEmpty(card.getString("STATUSCD").trim())) {
+                        String cardNo = card.getString("CARDNO");
+                        result.put("CARDNO", cardNo);
+                        result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
+                        result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
+                        result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
+                        result.put("CCARDAVAILCASHLIMIT", card.getString("CCARDAVAILCASHLIMIT"));
+                        prompt = prompt + "您的信用卡信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
+                        prompt = prompt + "可用额度为," + change(card.getString("CCARDAVAILLIMIT")) + " ";
+                        prompt = prompt + "预借现金额度为," + change(card.getString("CTDCASHAMOT")) + " ";
+                        prompt = prompt + "可用现金额度为," + change(card.getString("CCARDAVAILCASHLIMIT")) + " ";
                     } else {
                         prompt = "没有查询到额度信息。";
                     }
-                    result.put("prompt", prompt);
+                    StrUtil.capturePrompt(prompt, result);
                 } else {
-                    for (int calli = 0; calli < jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size(); calli++) {
-                        result.put("CCARDLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDLIMIT"));
-                        result.put("CCARDAVAILLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDAVAILLIMIT"));
-                        result.put("CTDCASHAMOT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CTDCASHAMOT"));
-                        result.put("CCARDAVAILCASHLIMIT", JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDAVAILCASHLIMIT"));
-                        prompt = prompt + "您的信用卡" + (calli + 1) + ",信用额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDLIMIT")) + " ";
-                        prompt = prompt + "可用额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDAVAILLIMIT")) + " ";
-                        prompt = prompt + "预借现金额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CTDCASHAMOT")) + " ";
-                        prompt = prompt + "可用现金额度为," + change((String)JSONPath.eval(resultString, "$.RSP_BODY.RspStruct[" + calli + "].CCARDAVAILCASHLIMIT")) + " ";
+                    for (int calli = 0; calli < allCards.size(); calli++) {
+                        JSONObject card = allCards.getJSONObject(calli);
+                        String cardNo = card.getString("CARDNO");
+                        String tailNo = cardNo.length() >= 4 ? cardNo.substring(cardNo.length() - 4) : cardNo;
+                        result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
+                        result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
+                        result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
+                        result.put("CCARDAVAILCASHLIMIT", card.getString("CCARDAVAILCASHLIMIT"));
+                        prompt = prompt + "尾号为" + tailNo + "的信用卡,信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
+                        prompt = prompt + "可用额度为," + change(card.getString("CCARDAVAILLIMIT")) + " ";
+                        prompt = prompt + "预借现金额度为," + change(card.getString("CTDCASHAMOT")) + " ";
+                        prompt = prompt + "可用现金额度为," + change(card.getString("CCARDAVAILCASHLIMIT")) + " ";
                     }
-                    result.put("prompt", prompt);
-
+                    StrUtil.capturePrompt(prompt, result);
                 }
             }
         } catch (Exception e)
@@ -502,7 +529,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                 prompt = prompt + jsonObj.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,最近" + callt + "笔如下:";
 
                 int displayCount = 0;
-                for (calli = callt - 1; calli >= 0; calli--) {
+                for (calli = 0; calli < callt && displayCount < 10; calli++) {
                     JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
                     // 过滤金额为0的记录
                     try {
@@ -577,7 +604,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     prompt = prompt + jsonObj.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,最近" + callt + "笔如下:";
 
                     int displayCount = 0;
-                    for (calli = callt - 1; calli >= 0; calli--) {
+                    for (calli = 0; calli < callt && displayCount < 10; calli++) {
                         JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
                         // 过滤金额为0的记录
                         try {
@@ -611,7 +638,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                         prompt = prompt + jsonObj2.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,最近" + callt + "笔如下:";
 
                         int displayCount = 0;
-                        for (calli = callt - 1; calli >= 0; calli--) {
+                        for (calli = 0; calli < callt && displayCount < 10; calli++) {
                             JSONObject jsonObjCall = jsonObj2.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
                             // 过滤金额为0的记录
                             try {
@@ -646,7 +673,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                         prompt = prompt + jsonObj3.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,最近" + callt + "笔如下:";
 
                         int displayCount = 0;
-                        for (calli = callt - 1;( calli >= 0) && ((callt - calli)<=10) ; calli--) {
+                        for (calli = 0; calli < callt && displayCount < 10; calli++) {
                             JSONObject jsonObjCall = jsonObj3.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
                             // 过滤金额为0的记录
                             try {

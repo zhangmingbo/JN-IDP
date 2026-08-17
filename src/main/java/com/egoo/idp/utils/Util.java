@@ -545,6 +545,9 @@ public class Util
 
   public static String change(String strmoney) {
     double inputMonney = Double.parseDouble(strmoney);
+    if(inputMonney < 0){
+      inputMonney = Math.abs(inputMonney);
+    }
     if(inputMonney > 0){
       int decimalDigit = 2;//人名币保留2位小数到分
       char[] data = {'零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'};
