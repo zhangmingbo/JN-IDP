@@ -355,8 +355,8 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     JSONObject card = allCards.getJSONObject(0);
                     String statuscd = card.getString("STATUSCD");
                     if (statuscd == null || ObjectUtils.isEmpty(statuscd.trim())) {
-                        String cardNo = card.getString("CARDNO");
-                        result.put("CARDNO", cardNo);
+                        String acctNo = card.getString("ACCTNO");
+                        result.put("CARDNO", acctNo);
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                         result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
                         result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
@@ -372,10 +372,10 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                 } else {
                     for (int calli = 0; calli < allCards.size(); calli++) {
                         JSONObject card = allCards.getJSONObject(calli);
-                        String cardNo = card.getString("CARDNO");
+                        String acctNo = card.getString("ACCTNO");
                         String cardLabel;
-                        if (cardNo != null && cardNo.length() >= 4) {
-                            cardLabel = "尾号为" + cardNo.substring(cardNo.length() - 4) + "的信用卡";
+                        if (acctNo != null && acctNo.length() >= 4) {
+                            cardLabel = "尾号为" + acctNo.substring(acctNo.length() - 4) + "的信用卡";
                         } else {
                             cardLabel = "信用卡" + (calli + 1);
                         }
