@@ -373,12 +373,17 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     for (int calli = 0; calli < allCards.size(); calli++) {
                         JSONObject card = allCards.getJSONObject(calli);
                         String cardNo = card.getString("CARDNO");
-                        String tailNo = (cardNo != null && cardNo.length() >= 4) ? cardNo.substring(cardNo.length() - 4) : cardNo;
+                        String cardLabel;
+                        if (cardNo != null && cardNo.length() >= 4) {
+                            cardLabel = "尾号为" + cardNo.substring(cardNo.length() - 4) + "的信用卡";
+                        } else {
+                            cardLabel = "信用卡" + (calli + 1);
+                        }
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                         result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
                         result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
                         result.put("CCARDAVAILCASHLIMIT", card.getString("CCARDAVAILCASHLIMIT"));
-                        prompt = prompt + "尾号为" + tailNo + "的信用卡,信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
+                        prompt = prompt + cardLabel + ",信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
                         prompt = prompt + "可用额度为," + change(card.getString("CCARDAVAILLIMIT")) + " ";
                         prompt = prompt + "预借现金额度为," + change(card.getString("CTDCASHAMOT")) + " ";
                         prompt = prompt + "可用现金额度为," + change(card.getString("CCARDAVAILCASHLIMIT")) + " ";
