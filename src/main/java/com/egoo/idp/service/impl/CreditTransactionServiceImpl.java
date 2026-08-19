@@ -297,6 +297,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
 
     @Override
     public JSONObject getCreditLimit(String transServiceCode, String IDNO, String u_ani, String u_connid) {
+        log.info("[额度查询-v2] 开始查询, IDNO={}, transServiceCode={}", IDNO, transServiceCode);
         JSONObject result = new JSONObject();
         try {
             //usagi.jar
@@ -330,6 +331,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                  *
                  */
                 int totalPages = Integer.parseInt(jsonObj.getJSONObject("RSP_BODY").getString("TotalPages"));
+                log.info("[额度查询-v2] 共{}页, 第一页{}张卡", totalPages, jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size());
                 JSONArray allCards = new JSONArray();
                 // 收集第一页数据
                 for (int i = 0; i < jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size(); i++) {
@@ -351,11 +353,14 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     }
                 }
 
+                log.info("[额度查询-v2] 收集完成, 共{}张卡", allCards.size());
+
                 if (allCards.size() == 1) {
                     JSONObject card = allCards.getJSONObject(0);
                     String statuscd = card.getString("STATUSCD");
                     if (statuscd == null || ObjectUtils.isEmpty(statuscd.trim())) {
                         String acctNo = card.getString("ACCTNO");
+                        log.info("[额度查询-v2] 单卡 ACCTNO={}, CCARDLIMIT={}", acctNo, card.getString("CCARDLIMIT"));
                         result.put("CARDNO", acctNo);
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                         result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
@@ -374,12 +379,14 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                         try {
                             JSONObject card = allCards.getJSONObject(calli);
                             String acctNo = card.getString("ACCTNO");
+                            log.info("[额度查询-v2] 第{}张卡 ACCTNO={}, CCARDLIMIT={}, STATUSCD={}", calli + 1, acctNo, card.getString("CCARDLIMIT"), card.getString("STATUSCD"));
                             String cardLabel;
                             if (acctNo != null && acctNo.length() >= 4) {
                                 cardLabel = "尾号为" + acctNo.substring(acctNo.length() - 4) + "的信用卡";
                             } else {
                                 cardLabel = "信用卡" + (calli + 1);
                             }
+                            log.info("[额度查询-v2] 第{}张卡播报标签: {}", calli + 1, cardLabel);
                             result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                             result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
                             result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
