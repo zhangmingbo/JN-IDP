@@ -371,22 +371,26 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     StrUtil.capturePrompt(prompt, result);
                 } else {
                     for (int calli = 0; calli < allCards.size(); calli++) {
-                        JSONObject card = allCards.getJSONObject(calli);
-                        String acctNo = card.getString("ACCTNO");
-                        String cardLabel;
-                        if (acctNo != null && acctNo.length() >= 4) {
-                            cardLabel = "尾号为" + acctNo.substring(acctNo.length() - 4) + "的信用卡";
-                        } else {
-                            cardLabel = "信用卡" + (calli + 1);
+                        try {
+                            JSONObject card = allCards.getJSONObject(calli);
+                            String acctNo = card.getString("ACCTNO");
+                            String cardLabel;
+                            if (acctNo != null && acctNo.length() >= 4) {
+                                cardLabel = "尾号为" + acctNo.substring(acctNo.length() - 4) + "的信用卡";
+                            } else {
+                                cardLabel = "信用卡" + (calli + 1);
+                            }
+                            result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
+                            result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
+                            result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
+                            result.put("CCARDAVAILCASHLIMIT", card.getString("CCARDAVAILCASHLIMIT"));
+                            prompt = prompt + cardLabel + ",信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
+                            prompt = prompt + "可用额度为," + change(card.getString("CCARDAVAILLIMIT")) + " ";
+                            prompt = prompt + "预借现金额度为," + change(card.getString("CTDCASHAMOT")) + " ";
+                            prompt = prompt + "可用现金额度为," + change(card.getString("CCARDAVAILCASHLIMIT")) + " ";
+                        } catch (Exception e) {
+                            log.warn("获取第{}张卡额度信息异常,跳过", calli + 1, e);
                         }
-                        result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
-                        result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
-                        result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
-                        result.put("CCARDAVAILCASHLIMIT", card.getString("CCARDAVAILCASHLIMIT"));
-                        prompt = prompt + cardLabel + ",信用额度为," + change(card.getString("CCARDLIMIT")) + " ";
-                        prompt = prompt + "可用额度为," + change(card.getString("CCARDAVAILLIMIT")) + " ";
-                        prompt = prompt + "预借现金额度为," + change(card.getString("CTDCASHAMOT")) + " ";
-                        prompt = prompt + "可用现金额度为," + change(card.getString("CCARDAVAILCASHLIMIT")) + " ";
                     }
                     StrUtil.capturePrompt(prompt, result);
                 }
