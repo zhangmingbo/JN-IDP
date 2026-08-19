@@ -353,7 +353,8 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
 
                 if (allCards.size() == 1) {
                     JSONObject card = allCards.getJSONObject(0);
-                    if (ObjectUtils.isEmpty(card.getString("STATUSCD").trim())) {
+                    String statuscd = card.getString("STATUSCD");
+                    if (statuscd == null || ObjectUtils.isEmpty(statuscd.trim())) {
                         String cardNo = card.getString("CARDNO");
                         result.put("CARDNO", cardNo);
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
@@ -372,7 +373,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     for (int calli = 0; calli < allCards.size(); calli++) {
                         JSONObject card = allCards.getJSONObject(calli);
                         String cardNo = card.getString("CARDNO");
-                        String tailNo = cardNo.length() >= 4 ? cardNo.substring(cardNo.length() - 4) : cardNo;
+                        String tailNo = (cardNo != null && cardNo.length() >= 4) ? cardNo.substring(cardNo.length() - 4) : cardNo;
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                         result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
                         result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));

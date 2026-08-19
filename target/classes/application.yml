@@ -1,0 +1,55 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /idp
+
+spring:
+  application:
+    name: idp
+  # 设置 HTTP 请求和响应的默认字符编码
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    driver-class-name: dm.jdbc.driver.DmDriver
+    url: jdbc:dm://localhost:5236/IDP
+    username: SYSDBA
+    password: your_password
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 15
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: HikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.egoo.idp.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+
+logging:
+  level:
+    com.egoo.idp.mapper: debug
+  config: classpath:logback.xml
+
+swagger:
+  enabled: true  # 是否启用Swagger，生产环境建议设置为false
+
+#外部系统地址
+gateway:
+  kbp:
+    ip: localhost:8080
+    requestRspUrl: ${gateway.kbp.ip}/
+    queryPrefix: "请根据以下通话内容，帮我总结出这通会话的工单内容。请识别客户提出的问题或需求，并尽可能提取以下信息：客户意图、涉及的产品、问题描述、期望的解决方案（如果有）。提取的工单内容：客户意图：涉及的产品/服务：订单号：问题描述：期望的解决方案：\n"
+    querySuffix: "通话记录:客服：客服: 您好，很高兴为您服务。请问有什么可以帮您？客户: 我购买的XX产品昨天收到了，但是发现无法开机。客服: 非常抱歉给您带来不便。请问您的订单号是多少呢？客户: 我的订单号是1234567890。客服: 好的，请您详细描述一下无法开机的具体情况。客户: 就是按电源键没反应，指示灯也不亮。我尝试充电了，也没有任何反应。客服: 明白了。您希望如何解决这个问题呢？客户: 我希望能尽快更换一个新的产品。客服: 好的，我们会为您登记处理。"
+  transaction:
+    requestUrl:
+    uservice:
+    promptLength: 380
