@@ -319,17 +319,17 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                         cardNos.add(cardNo.trim());
                     }
                 }
-                log.info("[额度查询-v2] 卡号查询成功, 共{}张卡", cardNos.size());
+                log.info("[额度查询-v3] 卡号查询成功, 共{}张卡", cardNos.size());
             }
         } catch (Exception e) {
-            log.warn("[额度查询-v2] 卡号查询异常, 将降级为序号播报", e);
+            log.warn("[额度查询-v3] 卡号查询异常, 将降级为序号播报", e);
         }
         return cardNos;
     }
 
     @Override
     public JSONObject getCreditLimit(String transServiceCode, String IDNO, String u_ani, String u_connid) {
-        log.info("[额度查询-v2] 开始查询, IDNO={}, transServiceCode={}", IDNO, transServiceCode);
+        log.info("[额度查询-v3] ====== 开始查询, IDNO={}, transServiceCode={} ======", IDNO, transServiceCode);
         JSONObject result = new JSONObject();
         try {
             //usagi.jar
@@ -363,7 +363,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                  *
                  */
                 int totalPages = Integer.parseInt(jsonObj.getJSONObject("RSP_BODY").getString("TotalPages"));
-                log.info("[额度查询-v2] 共{}页, 第一页{}张卡", totalPages, jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size());
+                log.info("[额度查询-v3] 共{}页, 第一页{}张卡", totalPages, jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size());
                 JSONArray allCards = new JSONArray();
                 // 收集第一页数据
                 for (int i = 0; i < jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size(); i++) {
@@ -385,11 +385,12 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     }
                 }
 
-                log.info("[额度查询-v2] 收集完成, 共{}张卡", allCards.size());
+                log.info("[额度查询-v3] 收集完成, 共{}张卡", allCards.size());
 
                 // 通过身份证查卡号接口获取真实卡号列表
+                log.info("[额度查询-v3] 开始调用身份证查卡号接口 ccd047.01...");
                 List<String> cardNos = getCardNosByIdno(IDNO, u_ani, u_connid);
-                log.info("[额度查询-v2] 卡号列表: {}", cardNos);
+                log.info("[额度查询-v3] 卡号查询结果: size={}, cardNos={}", cardNos.size(), cardNos);
 
                 if (allCards.size() == 1) {
                     JSONObject card = allCards.getJSONObject(0);
@@ -397,7 +398,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     if (statuscd == null || ObjectUtils.isEmpty(statuscd.trim())) {
                         // 优先用真实卡号, 降级用ACCTNO
                         String displayNo = (cardNos.size() > 0) ? cardNos.get(0) : card.getString("ACCTNO");
-                        log.info("[额度查询-v2] 单卡 卡号={}, ACCTNO={}, CCARDLIMIT={}", displayNo, card.getString("ACCTNO"), card.getString("CCARDLIMIT"));
+                        log.info("[额度查询-v3] 单卡 displayNo={}, ACCTNO={}, CCARDLIMIT={}", displayNo, card.getString("ACCTNO"), card.getString("CCARDLIMIT"));
                         result.put("CARDNO", displayNo);
                         result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                         result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
@@ -423,14 +424,14 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                             if (displayNo == null || displayNo.trim().isEmpty()) {
                                 displayNo = card.getString("ACCTNO");
                             }
-                            log.info("[额度查询-v2] 第{}张卡 卡号={}, ACCTNO={}, CCARDLIMIT={}, STATUSCD={}", calli + 1, displayNo, card.getString("ACCTNO"), card.getString("CCARDLIMIT"), card.getString("STATUSCD"));
+                            log.info("[额度查询-v3] 第{}张卡 displayNo={}, ACCTNO={}, CCARDLIMIT={}, STATUSCD={}", calli + 1, displayNo, card.getString("ACCTNO"), card.getString("CCARDLIMIT"), card.getString("STATUSCD"));
                             String cardLabel;
                             if (displayNo != null && displayNo.length() >= 4) {
                                 cardLabel = "尾号为" + displayNo.substring(displayNo.length() - 4) + "的信用卡";
                             } else {
                                 cardLabel = "信用卡" + (calli + 1);
                             }
-                            log.info("[额度查询-v2] 第{}张卡播报标签: {}", calli + 1, cardLabel);
+                            log.info("[额度查询-v3] 第{}张卡播报标签: {}", calli + 1, cardLabel);
                             result.put("CCARDLIMIT", card.getString("CCARDLIMIT"));
                             result.put("CCARDAVAILLIMIT", card.getString("CCARDAVAILLIMIT"));
                             result.put("CTDCASHAMOT", card.getString("CTDCASHAMOT"));
@@ -445,6 +446,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     }
                     StrUtil.capturePrompt(prompt, result);
                 }
+                log.info("[额度查询-v3] 最终播报内容: {}", prompt);
             }
         } catch (Exception e)
         {
