@@ -82,6 +82,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                 prompt = "暂未查询到您的信用卡申请进度,如有疑问,请转接人工服务";
             }
             StrUtil.capturePrompt(prompt, result);
+            log.info("[申请进度] 最终播报内容: {}", prompt);
         } catch (Exception e) {
             log.error("查询信用卡进度异常",e);
         }
@@ -611,6 +612,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                     }
                 }
                 StrUtil.capturePrompt(prompt,result);
+                log.info("[单日明细] 最终播报内容: {}", prompt);
                 result.put("ReturnCode", "true");
 
             } else {
@@ -750,6 +752,7 @@ public class CreditTransactionServiceImpl implements CreditTransactionService {
                             prompt = prompt + "第" + displayCount + "笔:" + " 交易时间:" + jsonObjCall.getString("TRANTIME").substring(0, 4) + "年" + jsonObjCall.getString("TRANTIME").substring(4, 6) + "月" + jsonObjCall.getString("TRANTIME").substring(6, 8) + "日" + " 交易金额:" + change(jsonObjCall.getString("AMOUNT")) +  " 交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("MERCNAME")).trim()+" " +StrUtil.paseStrUTF8(jsonObjCall.getString("ABSTDESC")).trim() + ",";
                         }
                         StrUtil.capturePrompt(prompt,result);
+                        log.info("[多日明细] 最终播报内容: {}", prompt);
                         result.put("data_debug", callt);
                     }
 

@@ -204,6 +204,7 @@ public class MenuTransactionServiceImpl implements MenuTransactionService {
                     prompt = prompt + "第" + displayCount + "条" +  "账单日:" + jsonObjCall.getString("PAYDATE").substring(0,4) + "年"+ jsonObjCall.getString("PAYDATE").substring(4,6)+"月"+ jsonObjCall.getString("PAYDATE").substring(6,8)+"日" + "账单金额:" + change(jsonObjCall.getString("CTDPMT")) + "最低还款金额:" + change(jsonObjCall.getString("MINPMT")) + "最后还款日为:" + jsonObjCall.getString("PMTDUEDATE").substring(0,4) + "年"+ jsonObjCall.getString("PMTDUEDATE").substring(4,6)+"月"+ jsonObjCall.getString("PMTDUEDATE").substring(6,8)+"日" + ",";
                 }
                 StrUtil.capturePrompt(prompt,result);
+                log.info("[已出账单] 最终播报内容: {}", prompt);
 
             }
         }
@@ -264,6 +265,7 @@ public class MenuTransactionServiceImpl implements MenuTransactionService {
                     prompt = prompt + "第" + displayCount + "条" + "交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日" + "交易金额:" + change(jsonObjCall.getString("AMOUNT")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("MERCNAME")).trim() + "" + StrUtil.paseStrUTF8(jsonObjCall.getString("DESC")) + ",";
                 }
                 StrUtil.capturePrompt(prompt,result);
+                log.info("[未出账单] 最终播报内容: {}", prompt);
 
             } else if (jsonObj.getJSONObject("SYS_HEAD").getString("ReturnCode").equals("000001")) {
                 prompt = "未查到记录 ";

@@ -481,6 +481,7 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
                     StrUtil.capturePrompt(prompt,result);
 
                 }
+                log.info("[储蓄卡明细] 最终播报内容: {}", prompt);
 //                } else {
 //                    JSONObject defObj2 = Util.getBasicJson(transServiceCode, u_ani, u_connid);
 //                    JSONObject temp2 = new JSONObject();
