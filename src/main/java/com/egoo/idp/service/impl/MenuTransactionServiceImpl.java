@@ -189,15 +189,19 @@ public class MenuTransactionServiceImpl implements MenuTransactionService {
 
                 prompt =  prompt + size + "条账单记录,";
 
+                int displayCount = 0;
                 for (calli = 0; calli < callt; calli++) {
                     JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
-                    prompt = prompt + "第" + (calli + 1) + "条" +  "账单日:" + jsonObjCall.getString("PAYDATE").substring(0,4) + "年"+ jsonObjCall.getString("PAYDATE").substring(4,6)+"月"+ jsonObjCall.getString("PAYDATE").substring(6,8)+"日" + "账单金额:" + change(jsonObjCall.getString("CTDPMT"));
-                    if(jsonObjCall.getString("CTDPMT").equals("0"))
-                    {
-                        prompt = prompt + ",";
-                    }else{
-                        prompt = prompt + "最低还款金额:" + change(jsonObjCall.getString("MINPMT")) + "最后还款日为:" + jsonObjCall.getString("PMTDUEDATE").substring(0,4) + "年"+ jsonObjCall.getString("PMTDUEDATE").substring(4,6)+"月"+ jsonObjCall.getString("PMTDUEDATE").substring(6,8)+"日"+ ",";
+                    // 过滤账单金额为0的记录
+                    try {
+                        if (Double.parseDouble(jsonObjCall.getString("CTDPMT").trim()) == 0) {
+                            continue;
+                        }
+                    } catch (NumberFormatException e) {
+                        continue;
                     }
+                    displayCount++;
+                    prompt = prompt + "第" + displayCount + "条" +  "账单日:" + jsonObjCall.getString("PAYDATE").substring(0,4) + "年"+ jsonObjCall.getString("PAYDATE").substring(4,6)+"月"+ jsonObjCall.getString("PAYDATE").substring(6,8)+"日" + "账单金额:" + change(jsonObjCall.getString("CTDPMT")) + "最低还款金额:" + change(jsonObjCall.getString("MINPMT")) + "最后还款日为:" + jsonObjCall.getString("PMTDUEDATE").substring(0,4) + "年"+ jsonObjCall.getString("PMTDUEDATE").substring(4,6)+"月"+ jsonObjCall.getString("PMTDUEDATE").substring(6,8)+"日" + ",";
                 }
                 StrUtil.capturePrompt(prompt,result);
 
