@@ -244,11 +244,20 @@ public class MenuTransactionServiceImpl implements MenuTransactionService {
                 int size = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size();
                 int callt = Util.getBigNum(size);
                 prompt = prompt + size + "条记录,";
-                // 逆序
-                int num = 0;
-                for (calli = callt, num = 0; calli != 0 && num <10; calli--,num++) {
-                    JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli - 1);
-                    prompt = prompt + "第" + (num + 1) + "条" + "交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日" + "交易金额:" + change(jsonObjCall.getString("AMOUNT")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("MERCNAME")).trim() + "" + StrUtil.paseStrUTF8(jsonObjCall.getString("DESC")) + ",";
+                // 正序遍历，由近及远，过滤零金额
+                int displayCount = 0;
+                for (calli = 0; calli < callt && displayCount < 10; calli++) {
+                    JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
+                    // 过滤金额为0的记录
+                    try {
+                        if (Double.parseDouble(jsonObjCall.getString("AMOUNT").trim()) == 0) {
+                            continue;
+                        }
+                    } catch (NumberFormatException e) {
+                        continue;
+                    }
+                    displayCount++;
+                    prompt = prompt + "第" + displayCount + "条" + "交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日" + "交易金额:" + change(jsonObjCall.getString("AMOUNT")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("MERCNAME")).trim() + "" + StrUtil.paseStrUTF8(jsonObjCall.getString("DESC")) + ",";
                 }
                 StrUtil.capturePrompt(prompt,result);
 
