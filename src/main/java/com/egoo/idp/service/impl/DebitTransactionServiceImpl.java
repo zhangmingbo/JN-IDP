@@ -427,9 +427,9 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
             JSONObject defObj = Util.getBasicJson(transServiceCode, u_ani, u_connid);
             JSONObject temp = new JSONObject();
 
-            //-----user define
+            //-----user define - 第一次查询：获取总记录数
             temp.put("SHIFOUBZ", "0");
-            temp.put("QUERYNUM", "10");
+            temp.put("QUERYNUM", "1");
             temp.put("STARTNUM", "0");
             temp.put("MIMAZLEII", "0");
             temp.put("QUERYTYPE", "0");
@@ -440,7 +440,7 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
             temp.put("CURRENCYCODE", "01");
             defObj.put("REQ_BODY", temp);
 
-            //usagi.jar
+            //usagi.jar - 第一次查询
             JSONObject jsonObj = sendRequest(defObj);
 
             //-----ReturnValue
@@ -452,86 +452,67 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
             String AMOUNT = "";
             if (jsonObj.getJSONObject("SYS_HEAD").getString("ReturnCode").equals("000000")) {
                 result.put("ReturnCode", "true");
-                int calli;
-                int size = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size();
-                int callt =  Util.getBigNum(size);
+                
+                // 获取总记录数
+                int totalNum = Integer.parseInt(jsonObj.getJSONObject("RSP_BODY").getString("TotalNum"));
+                prompt = prompt + totalNum + "笔交易记录,";
+                result.put("TOTALNUM", String.valueOf(totalNum));
+                
+                // 计算起始位置：取最后10条
+                int startNum = Math.max(0, totalNum - 10);
+                int queryNum = Math.min(10, totalNum);
+                
+                log.info("[储蓄卡明细-v2] 总记录数={}, STARTNUM={}, QUERYNUM={}", totalNum, startNum, queryNum);
+                
+                // 第二次查询：取最后10条（最新的）
+                JSONObject defObj2 = Util.getBasicJson(transServiceCode, u_ani, u_connid);
+                JSONObject temp2 = new JSONObject();
+                temp2.put("SHIFOUBZ", "0");
+                temp2.put("QUERYNUM", String.valueOf(queryNum));
+                temp2.put("STARTNUM", String.valueOf(startNum));
+                temp2.put("MIMAZLEII", "0");
+                temp2.put("QUERYTYPE", "0");
+                temp2.put("STARTDATE",TimeUtil.getDayAgo(Integer.parseInt(day)));
+                temp2.put("ENDDATE",  TimeUtil.getDay());
+                temp2.put("KEHUZHAO", CARDNO);
+                temp2.put("ACCNUM", "00001");
+                temp2.put("CURRENCYCODE", "01");
+                defObj2.put("REQ_BODY", temp2);
+                
+                JSONObject jsonObj2 = sendRequest(defObj2);
+                
+                if (jsonObj2.getJSONObject("SYS_HEAD").getString("ReturnCode").equals("000000")) {
+                    int calli;
+                    int size = jsonObj2.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size();
+                    int callt = Util.getBigNum(size);
+                    
+                    prompt = prompt + "最近" + callt + "笔如下:";
 
-                prompt = prompt + jsonObj.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,";
-                result.put("TOTALNUM", jsonObj.getJSONObject("RSP_BODY").getString("TotalNum"));
-                prompt = prompt + "最近" + callt + "笔如下:";
+                    // 后端返回数据按时间正序（最旧在前），从后往前遍历显示最新的
+                    for (calli = callt - 1; calli >= 0; calli--) {
+                        JSONObject jsonObjCall = jsonObj2.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
+                        prompt = prompt + "第" + (callt - calli) + "笔:" + "交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日";
+                        prompt = prompt + "" + jsonObjCall.getString("TRADETIME");
+                        if (jsonObjCall.getString("LOANSIGN").equals("D")) {
+                            prompt = prompt + " 支出";
+                            AMOUNT = jsonObjCall.getString("JFFASHEE");
+                        } else if (jsonObjCall.getString("LOANSIGN").equals("C")) {
+                            prompt = prompt + " 存入";
+                            AMOUNT = jsonObjCall.getString("DFFASHEE");
+                        }
 
-                for (calli = callt - 1; calli >= 0; calli--) {
-                    JSONObject jsonObjCall = jsonObj.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
-                    prompt = prompt + "第" + (callt - calli) + "笔:" + "交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日";
-                    prompt = prompt + "" + jsonObjCall.getString("TRADETIME");
-                    if (jsonObjCall.getString("LOANSIGN").equals("D")) {
-                        prompt = prompt + " 支出";
-                        AMOUNT = jsonObjCall.getString("JFFASHEE");
-                    } else if (jsonObjCall.getString("LOANSIGN").equals("C")) {
-                        prompt = prompt + " 存入";
-                        AMOUNT = jsonObjCall.getString("DFFASHEE");
-
+                        prompt = prompt + "金额:" + change(AMOUNT.replaceAll("-", "")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("SHHUMGCH")) + "" +StrUtil.paseStrUTF8(jsonObjCall.getString("RECPACCNM"))+ ""+StrUtil.paseStrUTF8(jsonObjCall.getString("ABSTDESC"))+ "" + StrUtil.paseStrUTF8(jsonObjCall.getString("BEIZHUXX")) + "";
+                        if (AMOUNT.indexOf("-") > -1) {
+                            prompt = prompt + "该交易为冲正交易 ";
+                        }
+                        prompt = prompt + "交易后余额为:" + change(jsonObjCall.getString("ACCNOBL")) + ",";
+                        StrUtil.capturePrompt(prompt,result);
                     }
-
-                    prompt = prompt + "金额:" + change(AMOUNT.replaceAll("-", "")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("SHHUMGCH")) + "" +StrUtil.paseStrUTF8(jsonObjCall.getString("RECPACCNM"))+ ""+StrUtil.paseStrUTF8(jsonObjCall.getString("ABSTDESC"))+ "" + StrUtil.paseStrUTF8(jsonObjCall.getString("BEIZHUXX")) + "";
-                    if (AMOUNT.indexOf("-") > -1) {
-                        prompt = prompt + "该交易为冲正交易 ";
-                    }
-                    prompt = prompt + "交易后余额为:" + change(jsonObjCall.getString("ACCNOBL")) + ",";
-                    StrUtil.capturePrompt(prompt,result);
-
+                    log.info("[储蓄卡明细-v2] 最终播报内容: {}", prompt);
                 }
-                log.info("[储蓄卡明细] 最终播报内容: {}", prompt);
-//                } else {
-//                    JSONObject defObj2 = Util.getBasicJson(transServiceCode, u_ani, u_connid);
-//                    JSONObject temp2 = new JSONObject();
-//                    temp2.put("SHIFOUBZ", "0");
-//                    temp2.put("QUERYNUM", "10");
-//                    temp2.put("STARTNUM", "" + (numall - 10));
-//                    temp2.put("MIMAZLEII", "0");
-//                    temp2.put("QUERYTYPE", "0");
-//                    temp.put("STARTDATE",TimeUtil.getDayAgo(Integer.parseInt(day)));
-//                    temp.put("ENDDATE",  TimeUtil.getDay());
-//                    temp2.put("KEHUZHAO", CARDNO);
-//                    temp2.put("ACCNUM", "00001");
-//                    temp2.put("CURRENCYCODE", "01");
-//                    defObj2.put("REQ_BODY", temp2);
-//                    JSONObject jsonObj2 = sendRequest(defObj2);
-//                    if (jsonObj2.getJSONObject("SYS_HEAD").getString("ReturnCode").equals("000000")) {
-//                        callt = jsonObj2.getJSONObject("RSP_BODY").getJSONArray("RspStruct").size();
-//                        callt = Util.getBigNum(callt);
-//                        numall = Integer.parseInt(jsonObj2.getJSONObject("RSP_BODY").getString("TotalNum"));
-//                        prompt = prompt + jsonObj2.getJSONObject("RSP_BODY").getString("TotalNum") + "笔交易记录,";
-//                        result.put("TOTALNUM", jsonObj2.getJSONObject("RSP_BODY").getString("TotalNum"));
-//                        prompt = prompt + "最近" + callt + "笔如下:";
-//                        for (calli = callt - 1; calli >= 0; calli--) {
-//                            JSONObject jsonObjCall = jsonObj2.getJSONObject("RSP_BODY").getJSONArray("RspStruct").getJSONObject(calli);
-//                            prompt = prompt + "第" + (callt - calli) + "笔:" + " 交易时间:" + jsonObjCall.getString("TRANDATE").substring(0, 4) + "年" + jsonObjCall.getString("TRANDATE").substring(4, 6) + "月" + jsonObjCall.getString("TRANDATE").substring(6, 8) + "日";
-//                            prompt = prompt + " " + jsonObjCall.getString("TRADETIME");
-//                            if (jsonObjCall.getString("LOANSIGN").equals("D")) {
-//                                prompt = prompt + " 支出";
-//                                AMOUNT = jsonObjCall.getString("JFFASHEE");
-//                            } else if (jsonObjCall.getString("LOANSIGN").equals("C")) {
-//                                prompt = prompt + " 存入";
-//                                AMOUNT = jsonObjCall.getString("DFFASHEE");
-//                            }
-//                            prompt = prompt + "金额:" + change(AMOUNT.replaceAll("-", "")) + "交易描述:" + StrUtil.paseStrUTF8(jsonObjCall.getString("SHHUMGCH")) + "" + StrUtil.paseStrUTF8(jsonObjCall.getString("ABSTDESC")) + "" + StrUtil.paseStrUTF8(jsonObjCall.getString("BEIZHUXX")) + "";
-//                            if (AMOUNT.indexOf("-") > -1) {
-//                                prompt = prompt + " 该交易为冲正交易";
-//                            }
-//                            prompt = prompt + " 交易后余额为:" + change(jsonObjCall.getString("ACCNOBL")) + ",";
-//                        }
-//                    }
-//                    if (prompt.length() <= 400){
-//                        result.put("prompt", prompt);
-//                    }else {
-//                        result.put("prompt", prompt.substring(0,400));
-//                        result.put("prompt2", prompt.substring(400));
-//                    }
-//
-//                }
             }
         } catch (Exception e) {
+            log.error("[储蓄卡明细-v2] 查询异常", e);
             return result;
         }
         return result;
