@@ -512,6 +512,7 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
                     log.info("[储蓄卡明细-v2] 最终播报内容: {}", prompt);
                     log.info("[储蓄卡明细-v2] result.prompt: {}", result.getString("prompt"));
                     log.info("[储蓄卡明细-v2] result.prompt2: {}", result.getString("prompt2"));
+                    log.info("[储蓄卡明细-v2] result.prompt3: {}", result.getString("prompt3"));
                 }
             }
         } catch (Exception e) {

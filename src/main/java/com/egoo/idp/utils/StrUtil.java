@@ -44,6 +44,13 @@ public class StrUtil {
             int remainingLength = prompt.length() - PROMPT_LENGTH;
             int endIndex = PROMPT_LENGTH + Math.min(remainingLength, PROMPT_LENGTH);
             result.put("prompt2", prompt.substring(PROMPT_LENGTH, endIndex));
+            
+            // 如果还有剩余内容，生成 prompt3
+            if (prompt.length() > PROMPT_LENGTH * 2) {
+                int remainingLength2 = prompt.length() - PROMPT_LENGTH * 2;
+                int endIndex2 = PROMPT_LENGTH * 2 + Math.min(remainingLength2, PROMPT_LENGTH);
+                result.put("prompt3", prompt.substring(PROMPT_LENGTH * 2, endIndex2));
+            }
         }
     }
 
