@@ -506,9 +506,12 @@ public class DebitTransactionServiceImpl implements DebitTransactionService {
                             prompt = prompt + "该交易为冲正交易 ";
                         }
                         prompt = prompt + "交易后余额为:" + change(jsonObjCall.getString("ACCNOBL")) + ",";
-                        StrUtil.capturePrompt(prompt,result);
                     }
+                    // 循环结束后再调用分段
+                    StrUtil.capturePrompt(prompt,result);
                     log.info("[储蓄卡明细-v2] 最终播报内容: {}", prompt);
+                    log.info("[储蓄卡明细-v2] result.prompt: {}", result.getString("prompt"));
+                    log.info("[储蓄卡明细-v2] result.prompt2: {}", result.getString("prompt2"));
                 }
             }
         } catch (Exception e) {
