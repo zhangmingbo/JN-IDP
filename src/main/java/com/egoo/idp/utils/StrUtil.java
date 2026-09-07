@@ -36,21 +36,18 @@ public class StrUtil {
         }
 
         if (prompt.length() <= PROMPT_LENGTH) {
+            // 小于等于380字符，整段放入prompt
             result.put("prompt", prompt);
         } else {
+            // 超过380字符，平分为3段，每段不超过380字符，超过1140字符的部分放弃
             result.put("ReturnCode", "multiple");
-            result.put("prompt", prompt.substring(0, PROMPT_LENGTH));
-
-            int remainingLength = prompt.length() - PROMPT_LENGTH;
-            int endIndex = PROMPT_LENGTH + Math.min(remainingLength, PROMPT_LENGTH);
-            result.put("prompt2", prompt.substring(PROMPT_LENGTH, endIndex));
             
-            // 如果还有剩余内容，生成 prompt3
-            if (prompt.length() > PROMPT_LENGTH * 2) {
-                int remainingLength2 = prompt.length() - PROMPT_LENGTH * 2;
-                int endIndex2 = PROMPT_LENGTH * 2 + Math.min(remainingLength2, PROMPT_LENGTH);
-                result.put("prompt3", prompt.substring(PROMPT_LENGTH * 2, endIndex2));
-            }
+            int totalLength = Math.min(prompt.length(), PROMPT_LENGTH * 3); // 最多1140字符
+            int segmentLength = totalLength / 3; // 每段长度（平分）
+            
+            result.put("prompt", prompt.substring(0, segmentLength));
+            result.put("prompt2", prompt.substring(segmentLength, segmentLength * 2));
+            result.put("prompt3", prompt.substring(segmentLength * 2, totalLength));
         }
     }
 
